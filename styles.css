@@ -1,0 +1,66 @@
+.navhead {
+  background-color: #111111;
+}
+
+.navhead img {
+  max-height: 3.5em;
+  margin-left: 2%;
+  margin-top: 9px;
+  margin-bottom: 5px;
+}
+.navhead a {
+  color: #91013d;
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  text-align: right;
+}
+#text {
+  margin-top: 32px;
+  margin-right: 10px;
+  float: right;
+}
+body {
+  background-color: #181818;
+  margin: 0;
+}
+.footer {
+  margin-top: 20px;
+  height: 120px;
+  background-color: #111111;
+
+}
+.footer #rightcom {
+  max-height: 75px;
+  margin-top: 20px;
+  margin-right: 20px;
+  float: right;
+}
+.footer #leftcom {
+  max-height: 70px;
+  margin-top: 27px;
+  margin-left: 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col {
+  flex: 1 0 16%; /* The important bit. This percentage decides your columns. 
+ The percent can be px. It just represents your minimum starting width.
+  */
+  margin: 1%;
+  background: #181818;
+  height: auto;
+  color: white;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  -webkit-box-shadow: 0px 7px 13px 1px rgba(0,0,0,0.62);
+  -moz-box-shadow: 0px 7px 13px 1px rgba(0,0,0,0.62);
+  box-shadow: 0px 7px 13px 1px rgba(0,0,0,0.62);
+}
+.col img {
+  max-width: 100%;
+}

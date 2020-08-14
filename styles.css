@@ -52,7 +52,7 @@ body {
   */
   margin: 1%;
   background: #181818;
-  height: auto;
+  height: 21.961932650073205vw;
   color: white;
   display: flex;
   align-items: baseline;
@@ -62,5 +62,5 @@ body {
   box-shadow: 0px 7px 13px 1px rgba(0,0,0,0.62);
 }
 .col img {
-  max-width: 100%; 
+  max-width: 100%;
 }

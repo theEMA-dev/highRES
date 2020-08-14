@@ -47,7 +47,7 @@ body {
 }
 
 .col {
-  flex: 1 0 16%; /* The important bit. This percentage decides your columns. 
+  flex: 1 0 14%; /* The important bit. This percentage decides your columns. 
  The percent can be px. It just represents your minimum starting width.
   */
   margin: 1%;
@@ -62,5 +62,5 @@ body {
   box-shadow: 0px 7px 13px 1px rgba(0,0,0,0.62);
 }
 .col img {
-  max-width: 100%;
+  max-width: 100%; 
 }

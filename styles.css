@@ -98,3 +98,9 @@ body {
   box-shadow: none;
   pointer-events: none;
 }
+.col #hidden::selection {
+  background: transparent;
+}
+.col #hidden::-moz-selection {
+  background: transparent;
+}

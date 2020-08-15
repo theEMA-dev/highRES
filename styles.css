@@ -1,5 +1,7 @@
 .navhead {
   background-color: #111111;
+  position: fixed;
+  width: 100%;
 }
 
 .navhead img {
@@ -9,7 +11,7 @@
   margin-bottom: 5px;
 }
 .navhead a {
-  color: #91013d;
+  color: #df003f;
   font-family: 'Roboto', sans-serif;
   font-style: italic;
   text-align: right;

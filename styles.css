@@ -25,20 +25,44 @@ body {
 }
 .footer {
   margin-top: 20px;
-  height: 120px;
+  height: 14.641288433382138vw;
   background-color: #111111;
-
 }
-.footer #rightcom {
-  max-height: 75px;
-  margin-top: 20px;
-  margin-right: 20px;
+.left {
+  float: left;
+  margin-top: 2.6354319180087846vw;
+  margin-left: 3vw;
+}
+.right {
   float: right;
+  margin-top: 4vw;
+  margin-right: 3vw;
 }
-.footer #leftcom {
-  max-height: 70px;
-  margin-top: 27px;
-  margin-left: 20px;
+.right #imgresize {
+  max-height: 7.320644216691069vw;
+}
+.left p {
+  color: rgb(128, 128, 128);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1em;
+  margin-left: 2px;
+}
+.left h1 {
+  color: rgb(177, 177, 177);
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6em;
+  font-weight: 500;
+  line-height: 20px;
+}
+.left a {
+  color: rgb(177, 177, 177);
+  text-decoration: none;
+}
+.left a:hover {
+  color: #ff0149;
+  text-decoration: none;
 }
 
 .row {
@@ -51,16 +75,16 @@ body {
  The percent can be px. It just represents your minimum starting width.
   */
   margin: 1%;
-  background: #181818;
   height: 21.961932650073205vw;
   color: white;
   display: flex;
   align-items: baseline;
   justify-content: center;
-  -webkit-box-shadow: 0px 7px 13px 1px rgba(0,0,0,0.62);
-  -moz-box-shadow: 0px 7px 13px 1px rgba(0,0,0,0.62);
-  box-shadow: 0px 7px 13px 1px rgba(0,0,0,0.62);
 }
 .col img {
   max-width: 100%;
+  max-height: 101%;
+  -webkit-box-shadow: 0px 7px 13px 1px rgba(0,0,0,0.62);
+  -moz-box-shadow: 0px 7px 13px 1px rgba(0,0,0,0.62);
+  box-shadow: 0px 7px 13px 1px rgba(0,0,0,0.62);
 }

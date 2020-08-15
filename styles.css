@@ -9,6 +9,7 @@
   margin-left: 2%;
   margin-top: 9px;
   margin-bottom: 5px;
+  opacity: 1;
 }
 .navhead a {
   color: #df003f;
@@ -42,6 +43,7 @@ body {
 }
 .right #imgresize {
   max-height: 7.320644216691069vw;
+  opacity: 1;
 }
 .left p {
   color: rgb(128, 128, 128);
@@ -90,6 +92,10 @@ body {
   -moz-box-shadow: 0px 7px 13px 1px rgba(0,0,0,0.62);
   box-shadow: 0px 7px 13px 1px rgba(0,0,0,0.62);
 }
+img {
+  opacity: 0;
+  transition: all 1000ms;
+}
 .col #hidden {
   max-width: 100%;
   max-height: 101%;
@@ -103,4 +109,8 @@ body {
 }
 .col #hidden::-moz-selection {
   background: transparent;
+}
+.fade {
+  opacity: 1;
+  transition: all 1000ms;
 }

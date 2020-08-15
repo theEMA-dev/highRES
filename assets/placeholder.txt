@@ -1,0 +1,8 @@
+GAME >>>
+
+<div class="col"><a href="grids/aion-collectors-edition.png"><img id="shown" data-lazy="thumbs/aion-collectors-edition=thumb.png" alt="Aion Collector's Edition (2009) upload:13/08/20 id:0001"></a></div>
+
+
+PLACEHOLDER >>>
+
+<div class="col"><a><img id="hidden" src="assets/temp2.png" alt="Placeholder"></a></div>

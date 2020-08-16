@@ -26,6 +26,28 @@ body {
   background-color: #181818;
   margin: 0;
 }
+h1 {
+  font-size: 3vw;
+  margin-left: 1vw;
+  font-weight: 900;
+  color: #df003f;
+  display: inline;
+  font-family: 'Roboto', sans-serif;
+}
+h2 {
+  font-size: 3vw;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #ac0149;
+  display: inline;
+}
+p {
+  line-height: 5px;
+  margin-left: 1.2vw;
+  font-size: 1.2vw;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(128, 128, 128);
+}
 .footer {
   margin-top: 20px;
   min-height: 14.641288433382138vw;

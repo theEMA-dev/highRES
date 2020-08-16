@@ -41,7 +41,7 @@ h2 {
   color: #ac0149;
   display: inline;
 }
-p {
+p#desc{
   line-height: 5px;
   margin-left: 1.2vw;
   font-size: 1.2vw;

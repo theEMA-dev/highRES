@@ -26,7 +26,7 @@ body {
   background-color: #181818;
   margin: 0;
 }
-h1 {
+h1#title {
   font-size: 3vw;
   margin-left: 1vw;
   font-weight: 900;

@@ -1,0 +1,30 @@
+p#desc{
+  line-height: 5px;
+  margin-left: 1.2vw;
+  font-size: 1.2vw;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(128, 128, 128);
+}
+
+h1#software-h1 {
+  font-size: 3vw;
+  margin-left: 1vw;
+  font-weight: 900;
+  color: #df003f;
+  display: inline;
+  font-family: 'Roboto', sans-serif;
+}
+h2#software-h2 {
+  font-size: 3vw;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #ac0149;
+  display: inline;
+}
+img#lego-img {
+  max-width: 35%;
+  opacity: 1;
+  margin-left: 0.4vw;
+  margin-bottom: -15px;
+  margin-top: -15px;
+}

@@ -9,7 +9,6 @@
   margin-left: 2%;
   margin-top: 9px;
   margin-bottom: 5px;
-  opacity: 1;
 }
 .navhead a {
   color: #df003f;
@@ -17,6 +16,51 @@
   font-style: italic;
   text-align: right;
 }
+.noLazyLoad {
+  opacity: 1;
+}
+/* SPLASH INTRO SECTION STARTS */
+.splashIntro {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #181818f6;
+  z-index: 200;
+  text-align: center;
+}
+.splashIntro.display-none {
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #181818;
+  z-index: -10;
+  text-align: center;
+  transition: all 1s;
+}
+.splashIntro.noRun {
+  display: none;
+}
+img#splashResize {
+  max-width: 16%;
+  position: absolute;
+  left: 42%;
+  top: 38%;
+}
+@keyframes fadeIn{
+  to{
+    opacity: 1;
+  }
+}
+.splashFade {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in forwards;
+}
+/* SPLASH INTRO SECTION ENDS */
 #text {
   margin-top: 32px;
   margin-right: 10px;
@@ -45,7 +89,6 @@ body {
 }
 .right #imgresize {
   max-height: 7.320644216691069vw;
-  opacity: 1;
 }
 .left p {
   color: rgb(128, 128, 128);
@@ -132,6 +175,9 @@ img {
     float: right;
     margin-top: 6vw;
     margin-right: 3vw;
+  }
+  .splashIntro {
+    display: none;
   }
 }
 @media only screen and (max-width: 800px) {

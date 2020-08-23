@@ -9,14 +9,14 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="icon" href="../favicon.ico" type="image/x-icon" />
-    <script defer src="../app.js"></script>
+    <script defer src="/local/lazyLoad.js"></script>
   </head>
 <body>
   <div class="navhead">
-    <a href="../index.html"><img src="../local/nav-logo.png" alt="logo"></a><div id="text"><a>click a grid to view full resolution</a></div>
+    <a href="../index.html"><img src="../local/nav-logo.png" class="noLazyLoad" alt="logo"></a><div id="text"><a>click a grid to view full resolution</a></div>
   </div>
   <br><br><br><br><br>
-  <img src="../local/clogo2.png" id="lego-img">
+  <img src="../local/clogo2.png" class="noLazyLoad" id="lego-img">
   <p id="desc">Standardised grids for Lego games ever existed. Template included for future games.</p>
   <div class="row">
     <div class="col"><a href="../cdn/grid/22.png"><img id="shown" data-lazy="../cdn/thumb/22.png" alt="LEGO® The Hobbit™ (2014)"></a></div>
@@ -32,7 +32,7 @@
       <p>highRES is an archive for storing 1200x1800 grids that cannot uploaded to SteamGridDB.<br><br>Please contact me from <a href="https://discord.gg/2jYnUej">discord</a> or <a href="mailto:mstfemirkynr@pm.me?subject=Copyright%20or%20legal%20issues">email</a> for any legal or copyright issues.<br><br>highRES is not affiliated with Valve Corporation or the Steam platform.</p>
     </div>
     <div class="right">
-      <a href="https://www.steamgriddb.com/profile/76561198165563784"><img id="imgresize" src="../local/footer-logo.png" alt=""></a>
+      <a href="https://www.steamgriddb.com/profile/76561198165563784"><img id="imgresize" class="noLazyLoad" src="../local/footer-logo.png" alt=""></a>
     </div>
   </div>
 </body>

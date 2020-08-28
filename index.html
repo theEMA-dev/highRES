@@ -1,46 +1,68 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- META TAGS -->
     <title>highRES - Grid Database</title>
+    <meta property="og:title" content="highRES - Grid Database">
+    <meta property="og:description" content="highRES is an archive for storing game high resolution game assets. Currently hosting 22 grids!">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="highRES">
+    <meta property="og:url" content="https://theema-dev.github.io/highRES/">
+    <meta property="og:image" content="local/se-richpresence.png">
+    <meta property="og:image:width" content="1280">
+    <meta property="og:image:height" content="720">
+    <meta name="theme-color" content="#111111">
+    <meta name="robots" content="index">
+    <meta name="author" content="theEMA">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- RELATIONS -->
     <link rel="stylesheet" href="styles.css">
-    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <!-- SCRIPTS -->
     <script defer src="app.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176765401-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-176765401-1');
+    </script>
+    <!-- END OF HEAD -->
   </head>
-<body>
-  <div class="splashIntro">
-    <img class="noLazyLoad splashFade" id="splashResize" src="local/ema-logo.png">
-  </div>
-  <div class="navhead">
-    <img src="local/nav-logo.png" class="noLazyLoad"  alt="logo"><div id="text"><a>click a grid to view full resolution</a></div>
-  </div>
-  <br><br><br><br><br>
-  <div class="row">
-    <div class="col"><a href="collection/lego"><img id="shown" data-lazy="local/ccov2.png" alt="LEGO COLLECTION (2020)"></a></div>
-    <div class="col"><a href="cdn/grid/20.png"><img id="shown" data-lazy="cdn/thumb/20.png" alt="Fall Guys (2020)"></a></div>
-    <div class="col"><a href="https://moofemp.com/image/grid-designs/signmake.png"><img id="shown" data-lazy="cdn/thumb/19.png" alt="Portal 2 (2011) by Moofy"></a></div>
-    <div class="col"><a href="collection/software"><img id="shown" data-lazy="local/ccov1.png" alt="SOFTWARE COLLECTION (2020)"></a></div>
-    <div class="col"><a href="cdn/grid/8.png"><img id="shown" data-lazy="cdn/thumb/8.png" alt="Oxygen Not Included (2019)"></a></div>
-    <div class="col"><a href="cdn/grid/7.png"><img id="shown" data-lazy="cdn/thumb/7.png" alt="Payday 2 (2013)"></a></div>
-    <div class="col"><a href="cdn/grid/6.png"><img id="shown" data-lazy="cdn/thumb/6.png" alt="Skul: The Hero Slayer (2020)"></a></div>
-    <div class="col"><a href="cdn/grid/5.png"><img id="shown" data-lazy="cdn/thumb/5.png" alt="Among Us (2018)"></a></div>
-    <div class="col"><a href="cdn/grid/4.png"><img id="shown" data-lazy="cdn/thumb/4.png" alt="Maid of Sker (2020)"></a></div>
-    <div class="col"><a href="cdn/grid/3.png"><img id="shown" data-lazy="cdn/thumb/3.png" alt="Parkasaurus (2018)"></a></div>
-    <div class="col"><a href="cdn/grid/2.png"><img id="shown" data-lazy="cdn/thumb/2.png" alt="Factorio (2016)"></a></div>
-    <div class="col"><a href="cdn/grid/1.png"><img id="shown" data-lazy="cdn/thumb/1.png" alt="Aion Collector's Edition (2009)"></a></div>
-  </div>
-  <div class="footer">
-    <div class="left">
-      <h1>highRES Project</h1>
-      <p>highRES is an archive for storing 1200x1800 grids that cannot uploaded to SteamGridDB.<br><br>Please contact me from <a href="https://discord.gg/2jYnUej">discord</a> or <a href="mailto:mstfemirkynr@pm.me?subject=Copyright%20or%20legal%20issues">email</a> for any legal or copyright issues.<br><br>highRES is not affiliated with Valve Corporation or the Steam platform.</p>
+  <body>
+    <div class="splashIntro">
+      <img class="noLazyLoad splashFade" id="splashResize" src="local/ema-logo.png">
     </div>
-    <div class="right">
-      <a href="https://www.steamgriddb.com/profile/76561198165563784"><img class="noLazyLoad" id="imgresize" src="local/footer-logo.png" alt=""></a>
+    <div class="navhead">
+      <img src="local/nav-logo.png" class="noLazyLoad"  alt="logo"><div id="text"><a>click a grid to view full resolution</a></div>
     </div>
-  </div>
-  <script src="local/splashIntro.js"></script>
-</body>
+    <br><br><br><br><br>
+    <div class="row">
+      <div class="col"><a href="collection/lego"><img id="shown" data-lazy="local/ccov2.png" alt="LEGO COLLECTION (2020)"></a></div>
+      <div class="col"><a href="cdn/grid/20.png"><img id="shown" data-lazy="cdn/thumb/20.png" alt="Fall Guys (2020)"></a></div>
+      <div class="col"><a href="https://moofemp.com/image/grid-designs/signmake.png" rel="nofollow"><img id="shown" data-lazy="cdn/thumb/19.png" alt="Portal 2 (2011) by Moofy"></a></div>
+      <div class="col"><a href="collection/software"><img id="shown" data-lazy="local/ccov1.png" alt="SOFTWARE COLLECTION (2020)"></a></div>
+      <div class="col"><a href="cdn/grid/8.png"><img id="shown" data-lazy="cdn/thumb/8.png" alt="Oxygen Not Included (2019)"></a></div>
+      <div class="col"><a href="cdn/grid/7.png"><img id="shown" data-lazy="cdn/thumb/7.png" alt="Payday 2 (2013)"></a></div>
+      <div class="col"><a href="cdn/grid/6.png"><img id="shown" data-lazy="cdn/thumb/6.png" alt="Skul: The Hero Slayer (2020)"></a></div>
+      <div class="col"><a href="cdn/grid/5.png"><img id="shown" data-lazy="cdn/thumb/5.png" alt="Among Us (2018)"></a></div>
+      <div class="col"><a href="cdn/grid/4.png"><img id="shown" data-lazy="cdn/thumb/4.png" alt="Maid of Sker (2020)"></a></div>
+      <div class="col"><a href="cdn/grid/3.png"><img id="shown" data-lazy="cdn/thumb/3.png" alt="Parkasaurus (2018)"></a></div>
+      <div class="col"><a href="cdn/grid/2.png"><img id="shown" data-lazy="cdn/thumb/2.png" alt="Factorio (2016)"></a></div>
+      <div class="col"><a href="cdn/grid/1.png"><img id="shown" data-lazy="cdn/thumb/1.png" alt="Aion Collector's Edition (2009)"></a></div>
+    </div>
+    <div class="footer">
+      <div class="left">
+        <h1>highRES Project</h1>
+        <p>highRES is an archive for storing 1200x1800 grids that cannot uploaded to SteamGridDB.<br><br>Please contact me from <a href="https://discord.gg/2jYnUej">discord</a> or <a href="mailto:mstfemirkynr@pm.me?subject=Copyright%20or%20legal%20issues">email</a> for any legal or copyright issues.<br><br>highRES is not affiliated with Valve Corporation or the Steam platform.</p>
+      </div>
+      <div class="right">
+        <a href="https://www.steamgriddb.com/profile/76561198165563784" rel="nofollow"><img class="noLazyLoad" id="imgresize" src="local/footer-logo.png" alt=""></a>
+      </div>
+    </div>
+    <script src="local/splashIntro.js"></script>
+  </body>
 </html>

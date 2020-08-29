@@ -33,3 +33,11 @@ img#software-img {
   margin-bottom: -15px;
   margin-top: -5px;
 }
+body#lego {
+  background-image: url(../local/pattern-lego.png);
+  background-repeat: repeat;
+}
+body#software {
+  background-image: url(../local/pattern-software.png);
+  background-repeat: repeat;
+}

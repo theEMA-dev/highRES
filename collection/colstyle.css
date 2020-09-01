@@ -41,3 +41,29 @@ body#software {
   background-image: url(../local/pattern-software.png);
   background-repeat: repeat;
 }
+
+
+/* NOT COLLECTION STYLING - VARIABLE PAGES STYLING */
+
+
+h2#variableGameName {
+  color: #df003f;
+  font-family: 'Roboto', sans-serif;
+  font-size: 3vw;
+  margin-left: 1.2vw;
+  font-weight: 600;
+  line-height: 0px;
+  display: inline;
+}
+.variableAuthor {
+  line-height: 0px;
+  font-size: 1.2vw;
+  font-family: 'Roboto', sans-serif;
+  color: #df003f;
+  display: inline;
+  text-decoration: none;
+}
+.variableAuthor:hover {
+  color: rgb(177, 177, 177);
+  text-decoration: none;
+}

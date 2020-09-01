@@ -1,4 +1,4 @@
-var websiteVersionVar = 'Version 200965a' ;
+var websiteVersionVar = 'Version 200965b' ;
     
   document.getElementById("websiteVersion").innerHTML = websiteVersionVar ;
 

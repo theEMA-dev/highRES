@@ -9,3 +9,10 @@ ________________________________________________________________________________
 - added changelog and version control 
 - added variables
 - added Overwolf Grids by Moofy
+
+[Version 200965b]
+- fixed a 404
+
+[Version 200965f]
+- fixed changelog
+- fixed gridCount

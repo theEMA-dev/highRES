@@ -16,3 +16,4 @@ ________________________________________________________________________________
 [Version 200965f]
 - fixed changelog
 - fixed gridCount
+- added Ancestors: The Humankind Odyssey Grids by theEMA *cdnsync1

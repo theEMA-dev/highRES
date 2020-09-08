@@ -17,3 +17,4 @@ ________________________________________________________________________________
 - fixed changelog
 - fixed gridCount
 - added Ancestors: The Humankind Odyssey Grids by theEMA *cdnsync1
+- added ACE COMBAT™ 7: SKIES UNKNOWN by theEMA *cdnsync2

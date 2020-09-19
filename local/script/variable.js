@@ -1,4 +1,4 @@
-/* VERSION TAMPLATE 
+/* VERSION TEMPLATE 
  Version 20 = year
          09 = month
          65 = commit id
@@ -8,7 +8,7 @@ var websiteVersionVar = 'Version 200965f' ;
     
   document.getElementById("websiteVersion").innerHTML = websiteVersionVar ;
 
-var gridCountVar = '29' ;
+var gridCountVar = '30' ;
     
   document.getElementById("gridCount").innerHTML = gridCountVar ;
 

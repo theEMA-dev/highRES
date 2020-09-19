@@ -18,3 +18,5 @@ ________________________________________________________________________________
 - fixed gridCount
 - added Ancestors: The Humankind Odyssey Grids by theEMA *cdnsync1
 - added ACE COMBAT™ 7: SKIES UNKNOWN by theEMA *cdnsync2
+- changed all thumbnails format to .webp
+- added Zork Nemesis: The Forbidden Lands (1996) by Moofy *cdnsync3

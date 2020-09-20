@@ -5,13 +5,10 @@ ________________________________________________________________________________
 #########################                               #########################
 _________________________________________________________________________________
 
-[Version 200965a]
-- added changelog and version control 
-- added variables
-- added Overwolf Grids by Moofy
-
-[Version 200965b]
-- fixed a 404
+[Version 200972a]
+- Navigation Revamp 1.0
+- added Grids, Assets, Collections and Upload pages (Not active yet)
+- new logo
 
 [Version 200965f]
 - fixed changelog
@@ -21,3 +18,13 @@ ________________________________________________________________________________
 - changed all thumbnails format to .webp
 - added Zork Nemesis: The Forbidden Lands (1996) by Moofy *cdnsync3
 - minified lazyLoad javascript
+
+[Version 200965b]
+- fixed a 404
+
+[Version 200965a]
+- added changelog and version control 
+- added variables
+- added Overwolf Grids by Moofy
+
+

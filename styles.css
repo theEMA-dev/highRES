@@ -141,7 +141,7 @@ body {
 }
 img {
   opacity: 0;
-  transition: all 1000ms;
+  transition: all 900ms;
 }
 .col #hidden {
   width: 100%;
@@ -159,7 +159,7 @@ img {
 }
 .fade {
   opacity: 1;
-  transition: all 1000ms;
+  transition: all 900ms;
 }
 
 

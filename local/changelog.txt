@@ -5,6 +5,10 @@ ________________________________________________________________________________
 #########################                               #########################
 _________________________________________________________________________________
 
+[Version 200972b]
+- Navigation now fully functional!
+- Mobile is currently not supported.
+
 [Version 200972a]
 - Navigation Revamp 1.0
 - added Grids, Assets, Collections and Upload pages (Not active yet)

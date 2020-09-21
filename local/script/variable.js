@@ -4,7 +4,7 @@
          65 = commit id
          a = alpha (or) b = beta (or) f = final
 */
-var websiteVersionVar = 'Version 200972a' ;
+var websiteVersionVar = 'Version 200972b' ;
     
   document.getElementById("websiteVersion").innerHTML = websiteVersionVar ;
 

@@ -1,3 +1,4 @@
+/* NAVIGATION STYLING START */
 nav {
   background-color: #111111;
   position: fixed;
@@ -25,6 +26,9 @@ li.nav-last {
 li.current {
   background-color: #202020;
 }
+.nav-dropdown:hover {
+  background-color: #202020;
+}
 nav a {
   color: #c50038;
   text-decoration: none;
@@ -35,6 +39,39 @@ nav a {
 nav a:hover {
   color: #ff0149;
   text-decoration: none;
+}
+.dropbtn {
+  color: #c50038;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+}
+.nav-dropdown {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.dropdown-content {
+  display: none;
+  position: relative;
+  background-color: #202020;
+  width: 100%;
+  z-index: 1;
+}
+.dropdown-content a {
+  color: #c50038;
+  line-height: 36px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+.dropdown-content a:hover {background-color: #111111}
+.nav-dropdown:hover .dropdown-content {
+  display: block;
 }
 nav #nav-logo-resize {
   max-height: 1.5rem;
@@ -187,8 +224,32 @@ img {
   opacity: 1;
   transition: all 900ms;
 }
-
-
+.collection-col {
+  flex: 1 0 30%; /* The important bit. This percentage decides your columns. 
+ The percent can be px. It just represents your minimum starting width.
+  */
+  margin: 2%;
+  height: 100%;
+  color: white;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+.collection-col #shown{
+  width: 100%;
+  height: 101%;
+  -webkit-box-shadow: 0px 7px 13px 1px rgba(0,0,0,0.62);
+  -moz-box-shadow: 0px 7px 13px 1px rgba(0,0,0,0.62);
+  box-shadow: 0px 7px 13px 1px rgba(0,0,0,0.62);
+}
+.collection-col #hidden {
+  width: 100%;
+  height: 101%;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  pointer-events: none;
+}
 @media only screen and (max-width: 900px) {
   .col {
     flex: 1 0 18%;

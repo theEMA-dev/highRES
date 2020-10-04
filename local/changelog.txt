@@ -8,6 +8,7 @@ ________________________________________________________________________________
 [Version 200972b]
 - Navigation now fully functional!
 - Mobile is currently not supported.
+- added Hollow Knight: Silksong (TBA) by theEMA *cdnscync1
 
 [Version 200972a]
 - Navigation Revamp 1.0

@@ -3,7 +3,7 @@ nav {
   background-color: #111111;
   position: fixed;
   width: 100%;
-  height: 54px;
+  height: 50px;
   -webkit-box-shadow: 0px 1px 0px 0px rgba(255,2,74,1);
   -moz-box-shadow: 0px 1px 0px 0px rgba(255,2,74,1);
   box-shadow: 0px 1px 0px 0px rgba(255,2,74,1);
@@ -15,7 +15,7 @@ ul {
 li {
   float: right;
   list-style-type: none;
-  line-height: 54px;
+  line-height: 50px;
   vertical-align: middle;
   padding-right: 0.85rem;
   padding-left: 0.85rem;
@@ -39,6 +39,7 @@ nav a {
 nav a:hover {
   color: #ff0149;
   text-decoration: none;
+  transition: ease-in all 150ms;
 }
 .dropbtn {
   color: #c50038;
@@ -54,7 +55,21 @@ nav a:hover {
   display: inline-block;
   padding-bottom: 5px;
 }
-
+.nav-icon {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-size: cover;
+  margin-top: 12px;
+}
+.nav-menu {
+  background-image: url(local/nav-icon.svg);
+  filter: invert(9%) sepia(72%) saturate(6618%) hue-rotate(334deg) brightness(105%) contrast(112%);
+}
+.nav-menu:focus, .nav-menu:hover {
+  filter: invert(12%) sepia(76%) saturate(6299%) hue-rotate(338deg) brightness(110%) contrast(106%);
+  transition: ease-in all 150ms;
+}
 .dropdown-content {
   display: none;
   position: relative;
@@ -76,8 +91,8 @@ nav a:hover {
 nav #nav-logo-resize {
   max-height: 1.5rem;
   margin-left: 3%;
-  margin-top: 15px;
-  margin-bottom: 5px;
+  margin-top: 13px;
+  margin-bottom: 7px;
 }
 .noLazyLoad {
   opacity: 1;
@@ -184,15 +199,13 @@ body {
 }
 
 .col {
-  flex: 1 0 14%; /* The important bit. This percentage decides your columns. 
- The percent can be px. It just represents your minimum starting width.
-  */
+  flex: 0.1 0 14%;
   margin: 1%;
   height: 21.961932650073205vw;
   color: white;
   display: flex;
   align-items: baseline;
-  justify-content: center;
+  justify-content: flex-start;
 }
 .col #shown{
   width: 100%;
@@ -206,28 +219,12 @@ img {
   opacity: 0;
   transition: all 900ms;
 }
-.col #hidden {
-  width: 100%;
-  height: 101%;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  pointer-events: none;
-}
-.col #hidden::selection {
-  background: transparent;
-}
-.col #hidden::-moz-selection {
-  background: transparent;
-}
 .fade {
   opacity: 1;
   transition: all 900ms;
 }
 .collection-col {
-  flex: 1 0 30%; /* The important bit. This percentage decides your columns. 
- The percent can be px. It just represents your minimum starting width.
-  */
+  flex: 1 0 30%;
   margin: 2%;
   height: 100%;
   color: white;
@@ -250,6 +247,8 @@ img {
   box-shadow: none;
   pointer-events: none;
 }
+.mobileNav {display: none;}
+/* 900pxden küçük */
 @media only screen and (max-width: 900px) {
   .col {
     flex: 1 0 18%;
@@ -268,6 +267,7 @@ img {
     display: none;
   }
 }
+/* 800pxden küçük */
 @media only screen and (max-width: 800px) {
   .col {
     flex: 1 0 20%;
@@ -283,6 +283,7 @@ img {
     margin-right: 3vw;
   }
 }
+/* 700pxden küçük */
 @media only screen and (max-width: 700px) {
   .col {
     flex: 1 0 25%;
@@ -308,18 +309,46 @@ img {
     opacity: 1;
     margin-left: 5vw;
 }
-/* for tablets and phones */
-@media only screen and (max-width: 600px) {
+/* 620pxden küçük */
+@media only screen and (max-width: 620px) {
   .col {
     flex: 1 0 40%;
     margin: 1%;
     height: auto;
+    justify-content: center;
+  }
+  .responsiveNav {display: none;}
+  .l1 {
+    position: absolute;
+    top: 50px;
+  }
+  .l2 {
+    position: absolute;
+    top: 100px;
+    background-color: #111111;
+  }
+  .l3 {
+    position: absolute;
+    top: 150px;
+    background-color: #111111;
+  }
+  .l4 {
+    position: absolute;
+    top: 200px;
+    background-color: #111111;
+    left: 0;
+  }
+  li {padding: 0;}
+  .responsiveNav {
+    width: 100%;
+    text-align: center;
   }
   .col #hidden {
     display: none;
   }
+  .mobileNav {display: inline;}
 }
-/* for mobile phones */
+/* 400pxden küçük */
 @media only screen and (max-width: 400px) {
   .col {
     flex: 1 0 80%;

@@ -37,16 +37,21 @@
     <nav>
       <a href="https://theema-dev.github.io/highRES/"><img class="noLazyLoad" id="nav-logo-resize" src="https://theema-dev.github.io/highRES/local/nav-logo1.webp"></a>
       <ul>
-        <li class="nav-last nav-dropdown">
+        <li class="mobileNav" style="padding-right: 0.85rem; padding-left: 0.85rem;">
+          <a href="javascript:void(0);" onclick="mobileTriggered()">
+            <span class="nav-icon nav-menu"></span> 
+          </a>
+        </li>
+        <li class="nav-last nav-dropdown responsiveNav l4">
           <a href="javascript:void(0)" class="dropbtn">UPLOAD</a>
           <div class="dropdown-content">
             <a href="https://www.dropbox.com/request/vUKTvrSjgyRl8NrJM4eG" target="_blank"> GRID </a>
             <a href="https://www.dropbox.com/request/E3NIFtjXvdJNKzCGKgbm" target="_blank"> ASSET </a>
           </div>
         </li>
-        <li class="current"><a href="https://theema-dev.github.io/highRES/collections">COLLECTIONS</a></li>
-        <li><a href="https://theema-dev.github.io/highRES/assets">ASSETS</a></li>
-        <li><a href="https://theema-dev.github.io/highRES/">GRIDS</a></li>
+        <li class="current responsiveNav l3"><a href="https://theema-dev.github.io/highRES/collections">COLLECTIONS</a></li>
+        <li class="responsiveNav l2"><a href="https://theema-dev.github.io/highRES/assets">ASSETS</a></li>
+        <li class="responsiveNav l1"><a href="https://theema-dev.github.io/highRES/">GRIDS</a></li>
       </ul>
     </nav>
     <br><br><br><br>
@@ -65,6 +70,21 @@
       </div>
     </div>
     <script src="local/splashIntro.js"></script>
+    <script>
+      function mobileTriggered() {
+        var navElement = document.getElementsByClassName("responsiveNav");
+        var displaySetting = navElement[0].style.display;
+        var i;
+        for(var i=0; i < 4; i++) {
+          if (displaySetting == 'block') { 
+          navElement[i].style.display = 'none';
+          }
+          else { 
+          navElement[i].style.display = 'block';
+          }
+        }
+      }
+      </script>
     <script src="local/script/variable.js"></script>
   </body>
 </html>

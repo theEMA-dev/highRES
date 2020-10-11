@@ -274,9 +274,6 @@ img {
     margin: 1%;
     height: auto;
   }
-  .col #hidden {
-    display: none;
-  }
   .right {
     float: right;
     margin-top: 8vw;
@@ -290,9 +287,7 @@ img {
     margin: 1%;
     height: auto;
   }
-  .col #hidden {
-    display: none;
-  }
+  .collection-col {flex: 1 0 90%; margin: 20px;}
   .right {
     float: none;
     text-align: center;
@@ -321,6 +316,7 @@ img {
   .l1 {
     position: absolute;
     top: 50px;
+    background-color: #111111;
   }
   .l2 {
     position: absolute;
@@ -343,9 +339,6 @@ img {
     width: 100%;
     text-align: center;
   }
-  .col #hidden {
-    display: none;
-  }
   .mobileNav {display: inline;}
 }
 /* 400pxden küçük */
@@ -355,9 +348,6 @@ img {
     margin: 5px;
     height: auto;
     width: 100%;
-  }
-  .col #hidden {
-    display: none;
   }
   .navhead a {
     display: none;

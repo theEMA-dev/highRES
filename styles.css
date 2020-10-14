@@ -199,13 +199,11 @@ body {
 }
 
 .col {
-  flex: 0.1 0 14%;
+  flex: 1 0 14%;
   margin: 1%;
-  height: 21.961932650073205vw;
-  color: white;
   display: flex;
   align-items: baseline;
-  justify-content: flex-start;
+  justify-content: center;
 }
 .col #shown{
   width: 100%;
@@ -218,6 +216,7 @@ body {
 img {
   opacity: 0;
   transition: all 900ms;
+  image-rendering: optimizeSpeed;
 }
 .fade {
   opacity: 1;
@@ -245,7 +244,7 @@ img {
   border-radius: 2px;
   min-height: 400px;
   width: 50%;
-  background-color: #111111;
+  background-color: #191919;
   display: block;
   align-items: baseline;
   -webkit-box-shadow: 0px 7px 13px 1px rgba(70, 70, 70, 0.62);
@@ -288,6 +287,12 @@ img {
  .changelog-col p i{
    color:  #3b3b3b;
  }
+ .changelog-col h2 b{
+  color:  #3b3b3b;
+  font-size: 0.7em;
+  font-weight: 400;
+  vertical-align: 3px;
+}
 .mobileNav {display: none;}
 /* 900pxden küçük */
 @media only screen and (max-width: 900px) {

@@ -4,11 +4,11 @@
          65 = commit id
          a = alpha (or) b = beta (or) f = final
 */
-var websiteVersionVar = 'Version 201082a' ;
+var websiteVersionVar = 'Version 201082b' ;
     
   document.getElementById("websiteVersion").innerHTML = websiteVersionVar ;
 
-var gridCountVar = '32' ;
+var gridCountVar = '35' ;
     
   document.getElementById("gridCount").innerHTML = gridCountVar ;
 

@@ -48,12 +48,9 @@
   <img src="../local/clogo2.png" class="noLazyLoad" id="lego-img">
   <p id="desc">Standardised grids for Lego games ever existed. Template included for future games.</p>
   <div class="row">
-    <div class="col"><a href="../cdn/grid/22.png" title="LEGO® The Hobbit™ (2014)"><img id="shown" data-lazy="../cdn/thumb/22.webp" alt="LEGO® The Hobbit™ (2014)"></a></div>
-    <div class="col"><a href="../cdn/grid/21.png" title="TEMPLATE"><img id="shown" data-lazy="../cdn/thumb/21.webp" alt="TEMPLATE"></a></div>
-    <div class="col"><a><img id="hidden"></a></div>
-    <div class="col"><a><img id="hidden"></a></div>
-    <div class="col"><a><img id="hidden"></a></div>
-    <div class="col"><a><img id="hidden"></a></div>
+    <div class="col"><figure><a href="../cdn/grid/22.png" title="LEGO® The Hobbit™ (2014)"><img class="zoomVER" id="shown" data-lazy="../cdn/thumb/22.webp" alt="LEGO® The Hobbit™ (2014)"></a></figure></div>
+    <div class="col"><figure><a href="../cdn/grid/21.png" title="TEMPLATE"><img class="zoomVER" id="shown" data-lazy="../cdn/thumb/21.webp" alt="TEMPLATE"></a></figure></div>
+    <div class="col"></div><div class="col"></div><div class="col"></div><div class="col"></div>
   </div>
   <div class="footer">
     <div class="left">
@@ -64,6 +61,7 @@
       <a href="https://www.steamgriddb.com/profile/76561198165563784"><img id="imgresize" class="noLazyLoad" src="../local/footer-logo.png" alt=""></a>
     </div>
   </div>
+  <script src="https://unpkg.com/zooming/build/zooming.min.js"></script>
   <script>
     function mobileTriggered() {
       var navElement = document.getElementsByClassName("responsiveNav");
@@ -78,6 +76,13 @@
         }
       }
     }
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        new Zooming({
+          bgColor: "rgb(17, 17, 17)", bgOpacity: 0.9
+        }).listen('.zoomVER')
+      })
     </script>
   <script src="../local/script/variable.js"></script>
 </body>

@@ -184,15 +184,61 @@ body {
   line-height: 20px;
   margin-top: 15px;
 }
-.left a {
-  color: rgb(177, 177, 177);
+.left a , #post-area a{
+  color: #b1b1b1;
   text-decoration: none;
 }
-.left a:hover {
+.left a:hover, #post-area a:hover{
   color: #ff0149;
   text-decoration: none;
 }
-
+/* ABOUT PAGE STARTS */
+#post-area {
+  margin: auto;
+  width: 80%;
+  height: 520px;
+  border-radius: 3px;
+  display: block;
+  background-color: #141414;
+  margin-bottom: 30px;
+}
+.post-preset {
+  margin-left: 2.8vw;
+  margin-right: 2.5vw;
+}
+.post-preset h1{
+  padding-top: 2vw;
+  font-weight: 300;
+  font-size: 2.3em;
+  font-family: 'Roboto', sans-serif;
+  color: #eb0042;
+  margin-bottom: -10px;
+}
+.post-preset h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.4em;
+  font-weight: 500;
+  color:#b1b1b1;
+  margin-left: 0.5vw;
+  margin-bottom: -12px;
+}
+.post-preset p {
+  margin-bottom: 25px;
+  margin-left: 0.5vw;
+  color: #808080;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+ }
+:target {
+  padding-left: 5px;
+  background-color: #181818;
+  border: 1.5px solid #c50038;
+}
+html {
+  scroll-padding-top: 200px;
+}
+/* FLEX GRID SECTION STARTS */
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -219,7 +265,7 @@ body {
   background-image: url(local/grad+feather.webp);
   transition: all 200ms;
 }
-#shown{
+#load {
   width: 99.9%;
   height: auto;
   -webkit-box-shadow: 0px 7px 13px 1px rgba(0,0,0,0.62);
@@ -251,34 +297,24 @@ img {
   align-items: baseline;
   justify-content: center;
 }
-.collection-col #shown{
-  width: 100%;
-  height: 101%;
-  -webkit-box-shadow: 0px 7px 13px 1px rgba(0,0,0,0.62);
-  -moz-box-shadow: 0px 7px 13px 1px rgba(0,0,0,0.62);
-  box-shadow: 0px 7px 13px 1px rgba(0,0,0,0.62);
-}
 .changelog-col {
   flex: 1 0 40%;
   margin: 1%;
-  border-radius: 2px;
+  border-radius: 3px;
   padding-bottom: 15px;
   width: 50%;
-  background-color: #191919;
+  background-color: #141414;
   display: block;
   align-items: baseline;
-  -webkit-box-shadow: 0px 7px 13px 1px rgba(70, 70, 70, 0.62);
-  -moz-box-shadow: 0px 7px 13px 1px rgba(70, 70, 70, 0.62);
-  box-shadow: 0px 1px 10px 1px rgba(70, 70, 70, 0.62);
 }
 .changelog-col h1{
   margin-top: 0;
   margin-bottom: -18px;
-  margin-left: 5px;
+  padding-left: 8px;
   padding: 10px;
   color: #eb0042;
   font-family: 'Roboto', sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 1.7em;
 }
 .changelog-col h2{
@@ -303,6 +339,19 @@ img {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 0.9em;
+ }
+ .changelog-col #hyperurl {
+  font-size: 16px;
+  vertical-align: middle;
+  color: #eb0042;
+ }
+ .changelog-col a {
+   text-decoration: none;
+ }
+ .changelog-col #hyperurl:hover {
+   color: #b1b1b1;
+   transition: ease-in all 100ms;
+   font-size: 22px;
  }
  .changelog-col p i{
    color:  #3b3b3b;
@@ -395,6 +444,11 @@ img {
     position: absolute;
     top: 200px;
     background-color: #111111;
+  }
+  .l5 {
+    position: absolute;
+    top: 250px;
+    background-color: #111111;
     left: 0;
   }
   li {padding: 0;}
@@ -416,3 +470,31 @@ img {
     display: none;
   }
 }}
+/* COLLECTION SPESIFIC DESIGN STARTS */
+p#desc{
+  line-height: 5px;
+  margin-left: 1.2vw;
+  font-size: 1.2vw;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(128, 128, 128);
+}
+img#lego-img {
+  max-width: 35%;
+  margin-left: 0.4vw;
+  margin-bottom: -15px;
+  margin-top: -15px;
+}
+img#software-img {
+  max-width: 38%;
+  margin-left: 0.4vw;
+  margin-bottom: -15px;
+  margin-top: -5px;
+}
+body#lego {
+  background-image: url(local/pattern-lego.png);
+  background-repeat: repeat;
+}
+body#software {
+  background-image: url(local/pattern-software.png);
+  background-repeat: repeat;
+}

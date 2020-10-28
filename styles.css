@@ -231,9 +231,21 @@ body {
   font-size: 1em;
  }
 :target {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   padding-left: 5px;
-  background-color: #181818;
   border: 1.5px solid #c50038;
+  background-color: #141414;
+  animation-name: changelogHyperlinkAnim;
+  animation-duration: 2.8s;
+}
+@keyframes changelogHyperlinkAnim {
+  from {background-color: #141414;}
+  25% {background-color: #383838;}
+  50% {background-color: #141414;}
+  75% {background-color: #383838;}
+  100% {background-color: #141414;}
 }
 html {
   scroll-padding-top: 200px;

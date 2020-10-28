@@ -8,10 +8,13 @@ var websiteVersionVar = 'Version 201082f' ;
     
   document.getElementById("websiteVersion").innerHTML = websiteVersionVar ;
 
-var gridCountVar = '36' ;
+var gridCountVar = '37' ;
     
   document.getElementById("gridCount").innerHTML = gridCountVar ;
 
 var materialCountVar = '0' ;
     
   document.getElementById("materialCount").innerHTML = materialCountVar ;
+
+a = document.getElementById("websiteVersion");
+a.setAttribute("href", "https://theema-dev.github.io/highRES/help#version201082");

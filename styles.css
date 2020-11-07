@@ -1,6 +1,6 @@
 /* NAVIGATION STYLING START */
 nav {
-  background: rgb(17,17,17);
+  background: rgb(17, 17, 17);
   background: -moz-linear-gradient(295deg, rgba(17,17,17,1) 26%, rgba(67,0,21,1) 100%);
   background: -webkit-linear-gradient(295deg, rgba(17,17,17,1) 26%, rgba(67,0,21,1) 100%);
   background: linear-gradient(295deg, rgba(17,17,17,1) 26%, rgba(67,0,21,1) 100%);
@@ -153,7 +153,11 @@ body {
   margin-top: 20px;
   min-height: 16vw;
   width: 100%;
-  background-color: #111111;
+  background: rgb(17,17,17);
+  background: -moz-linear-gradient(236deg, rgba(17,17,17,1) 39%, rgba(67,0,21,1) 77%);
+  background: -webkit-linear-gradient(236deg, rgba(17,17,17,1) 39%, rgba(67,0,21,1) 77%);
+  background: linear-gradient(236deg, rgba(17,17,17,1) 39%, rgba(67,0,21,1) 77%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#111111",endColorstr="#430015",GradientType=1);
   position: absolute;
 }
 .left {
@@ -232,14 +236,11 @@ body {
   font-size: 1em;
  }
 :target {
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   padding-left: 5px;
-  border: 1.5px solid #c50038;
   background-color: #141414;
   animation-name: changelogHyperlinkAnim;
   animation-duration: 2.8s;
+  border-radius: 2px;
 }
 @keyframes changelogHyperlinkAnim {
   from {background-color: #141414;}
@@ -259,19 +260,19 @@ mark {
   font-weight: 500;
 }
 mark#bd-add {
-  background: #42c933;
+  background: #2ECC40;
 }
 mark#bd-remove {
-  background: #E5062D;
+  background: #FF4136;
 }
 mark#bd-change {
-  background: #405EE0;
+  background: #0074D9;
 }
 mark#bd-fix {
-  background: #c9c508;
+  background: #FF851B;
 }
 mark#bd-upload {
-  background: #590566;
+  background: #808080;
 }
 /* FLEX GRID SECTION STARTS */
 .row {
@@ -383,14 +384,21 @@ img {
  }
  .changelog-col a {
    text-decoration: none;
+   cursor: help;
  }
  .changelog-col #hyperurl:hover {
    color: #b1b1b1;
    transition: ease-in all 100ms;
    font-size: 22px;
  }
- .changelog-col p i{
+ .changelog-col p:hover > i {
+   opacity: 1;
+   transition: ease-in-out all 500ms;
+ }
+ .changelog-col p i {
+   opacity: 0;
    color:  #3b3b3b;
+   font-style: normal;
  }
  .changelog-col h2 b{
   color:  #3b3b3b;

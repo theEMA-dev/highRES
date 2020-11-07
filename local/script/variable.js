@@ -17,4 +17,4 @@ var materialCountVar = '0' ;
   document.getElementById("materialCount").innerHTML = materialCountVar ;
 
 a = document.getElementById("websiteVersion");
-a.setAttribute("href", "https://theema-dev.github.io/highRES/help#version201082");
+a.setAttribute("href", "https://theema-dev.github.io/highRES/help#version201188");

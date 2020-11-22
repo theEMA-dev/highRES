@@ -521,6 +521,12 @@ p#desc{
   font-family: 'Roboto', sans-serif;
   color: rgb(128, 128, 128);
 }
+span#col-auth {
+  font-style: italic;
+  font-size: 1.2vw;
+  font-family: 'Roboto', sans-serif;
+  color: #b1b1b1;
+}
 img#lego-img {
   max-width: 35%;
   margin-left: 0.4vw;
@@ -533,11 +539,21 @@ img#software-img {
   margin-bottom: -15px;
   margin-top: -5px;
 }
+img#map-labs-img {
+  max-width: 30%;
+  margin-left: 1vw;
+  margin-bottom: -12px;
+  margin-top: -18px;
+}
 body#lego {
   background-image: url(local/pattern-lego.png);
   background-repeat: repeat;
 }
 body#software {
   background-image: url(local/pattern-software.png);
+  background-repeat: repeat;
+}
+body#map-labs {
+  background-image: url(local/pattern-map-labs.png);
   background-repeat: repeat;
 }

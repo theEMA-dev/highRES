@@ -255,22 +255,23 @@ mark {
   border-radius: 2px;
   padding-left: 2px;
   padding-right: 3px;
+  margin-right: 1px;
   color: #141414;
   font-weight: 500;
 }
-mark#bd-add {
+mark.bd-add {
   background: #2ECC40;
 }
-mark#bd-remove {
+mark.bd-remove {
   background: #FF4136;
 }
-mark#bd-change {
+mark.bd-change {
   background: #0074D9;
 }
-mark#bd-fix {
+mark.bd-fix {
   background: #FF851B;
 }
-mark#bd-upload {
+mark.bd-upload {
   background: #808080;
 }
 /* FLEX GRID SECTION STARTS */

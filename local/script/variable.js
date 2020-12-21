@@ -8,7 +8,7 @@ var websiteVersionVar = 'Version 201188f' ;
     
   document.getElementById("websiteVersion").innerHTML = websiteVersionVar ;
 
-var gridCountVar = '65' ;
+var gridCountVar = '66' ;
     
   document.getElementById("gridCount").innerHTML = gridCountVar ;
 

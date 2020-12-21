@@ -290,6 +290,9 @@ mark.bd-upload {
   justify-content: center;
   flex-direction: column;
 }
+.zoomVER ,.zoomHOR {
+  cursor: pointer !important;
+}
 .horizontalFrame {
   height: 21.791932vw;
   background-image: url(local/grad+simulated.webp);

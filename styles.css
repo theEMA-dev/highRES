@@ -274,6 +274,67 @@ mark.bd-fix {
 mark.bd-upload {
   background: #808080;
 }
+.gridInfo {
+  opacity: 0;
+}
+.col:hover > .gridInfo {
+  opacity: 1;
+  transition: ease-in-out all 200ms;
+}
+.gridInfo:hover {
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  -webkit-transform: translateY(-3px) translate(-50%);
+  -moz-transform: translateY(-3px) translate(-50%);
+  -ms-transform: translateY(-3px) translate(-50%);
+  -o-transform: translateY(-3px) translate(-50%);
+  transform:  translateY(-3px) translate(-50%);
+}
+.gridInfo {
+  position: absolute;
+  background-color: #4b4b4b;
+  border-radius: 3px;
+  height: 22px;
+  top: 95.7%;
+  left: 50%;
+  transform: translate(-50%);
+  padding-left: 5px;
+  padding-right: 5px;
+  -webkit-box-shadow: 0px 7px 13px 1px rgba(0,0,0,0.62);
+  -moz-box-shadow: 0px 7px 13px 1px rgba(0,0,0,0.62);
+  box-shadow: 0px 7px 13px 1px rgba(0,0,0,0.62);
+}
+.gridInfo p#colCount {font-weight: 500; margin-left: 5px;}
+.gridInfo p {
+  display: inline;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.6px;
+  font-size: 0.75em;
+  line-height: 22px;
+  color: #dddddd;
+  margin-right: 5px;
+  padding: 0;
+  cursor: default;
+}
+.gridInfo a {
+  display: inline;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.6px;
+  font-size: 0.75em;
+  line-height: 22px;
+  color: #dddddd;
+  text-decoration: none;
+}
+.gridInfo a:hover {
+  color: black;
+}
+.gridInfo a:visited {
+  text-decoration: none;
+}
 /* FLEX GRID SECTION STARTS */
 .row {
   display: flex;
@@ -282,6 +343,7 @@ mark.bd-upload {
   margin-block-end: 2%;
 }
 .col {
+  position: relative;
   flex: 1 0 14%;
   margin: 1%;
   height: 21.961932650073205vw;

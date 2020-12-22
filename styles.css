@@ -291,6 +291,9 @@ mark.bd-upload {
   -ms-transform: translateY(-3px) translate(-50%);
   -o-transform: translateY(-3px) translate(-50%);
   transform:  translateY(-3px) translate(-50%);
+  -webkit-box-shadow: 0px 0px 35px -1px rgba(0,0,0,0.65);
+  -moz-box-shadow: 0px 0px 35px -1px rgba(0,0,0,0.65);
+  box-shadow: 0px 0px 35px -1px rgba(0,0,0,0.65);
 }
 .gridInfo {
   position: absolute;
@@ -302,11 +305,26 @@ mark.bd-upload {
   transform: translate(-50%);
   padding-left: 5px;
   padding-right: 5px;
-  -webkit-box-shadow: 0px 7px 13px 1px rgba(0,0,0,0.62);
-  -moz-box-shadow: 0px 7px 13px 1px rgba(0,0,0,0.62);
-  box-shadow: 0px 7px 13px 1px rgba(0,0,0,0.62);
+  -webkit-box-shadow: 0px 0px 17px -1px rgba(0,0,0,0.65);
+  -moz-box-shadow: 0px 0px 17px -1px rgba(0,0,0,0.65);
+  box-shadow: 0px 0px 17px -1px rgba(0,0,0,0.65);
 }
-.gridInfo p#colCount {font-weight: 500; margin-left: 5px;}
+.gridInfo.widget-software {
+  -webkit-box-shadow: inset 0px 0px 27px -4px #671a9a;
+  -moz-box-shadow: inset 0px 0px 27px -4px #671a9a;
+  box-shadow: inset 0px 0px 27px -4px #671a9a;
+}
+.gridInfo.widget-lego {
+  -webkit-box-shadow: inset 0px 0px 27px -4px #810a0b;
+  -moz-box-shadow: inset 0px 0px 27px -4px #810a0b;
+  box-shadow: inset 0px 0px 27px -4px #810a0b;
+}
+.gridInfo.widget-maplabs {
+  -webkit-box-shadow: inset 0px 0px 27px -4px #60d630;
+  -moz-box-shadow: inset 0px 0px 27px -4px #60d630;
+  box-shadow: inset 0px 0px 27px -4px #60d630;
+}
+.gridInfo p#colCount {font-weight: 500; margin-right: 0;}
 .gridInfo p {
   display: inline;
   font-family: 'Roboto', sans-serif;

@@ -1,14 +1,14 @@
 /* VERSION TEMPLATE 
  Version 20 = year
          09 = month
-         65 = commit id
+         01 = revision
          a = alpha (or) b = beta (or) f = final
 */
-var websiteVersionVar = 'Version 201188f' ;
+var websiteVersionVar = 'Version 201101f' ;
     
   document.getElementById("websiteVersion").innerHTML = websiteVersionVar ;
 
-var gridCountVar = '67' ;
+var gridCountVar = '68' ;
     
   document.getElementById("gridCount").innerHTML = gridCountVar ;
 
@@ -38,4 +38,4 @@ var badgeUploadSelect = document.querySelectorAll(".bd-upload");
   }
 
 a = document.getElementById("websiteVersion");
-a.setAttribute("href", "https://theema-dev.github.io/highRES/help#version201188");
+a.setAttribute("href", "https://theema-dev.github.io/highRES/help#version201101");

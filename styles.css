@@ -197,12 +197,35 @@ body {
   color: #ff0149;
   text-decoration: none;
 }
+div#infobadge {
+  margin: auto;
+  border-radius: 3px;
+  background-color: #141414;
+  width: 95%;
+  text-align: center;
+  display: block;
+  -webkit-box-shadow: 0px 10px 10px -1px rgba(255, 1, 73, 0.65);
+  -moz-box-shadow: 0px 10px 10px -1px rgba(255, 1, 73, 0.65);
+  box-shadow: 0px 0px 10px -1px rgba(255, 1, 73, 0.65);
+}
+div#infobadge:hover {
+  -webkit-box-shadow: 0px 24px 10px -1px rgba(255, 1, 73, 0.8);
+  -moz-box-shadow: 0px 24px 10px -1px rgba(255, 1, 73, 0.8);
+  box-shadow: 0px 0px 24px -1px rgba(255, 1, 73, 0.8);
+  transition: ease-in-out all 300ms;
+}
+p#infobadge {
+  font-family: 'Roboto', sans-serif;
+  color:#b1b1b1;
+  font-size: 0.87em;
+  padding: 8px;
+  cursor: default;
+}
 /* ABOUT PAGE STARTS */
 #post-area {
   margin: auto;
   width: 80%;
   border-radius: 3px;
-  display: block;
   background-color: #141414;
   margin-bottom: 30px;
 }

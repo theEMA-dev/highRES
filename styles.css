@@ -349,6 +349,7 @@ mark.bd-upload {
 }
 .gridInfo a:hover {
   color: black;
+  transition: ease-in-out all 150ms;
 }
 .gridInfo a:visited {
   text-decoration: none;

@@ -1,10 +1,15 @@
 /* VERSION TEMPLATE 
- Version 20 = year
-         09 = month
-         01 = revision
-         a = alpha (or) b = beta (or) f = final
+ Version 2.0.3-2101a
+         2 = major version
+         0 = minor version 
+         3 = patch (number of changes in changelog)
+         ------------------------------------------
+         -2101a
+          21 = year
+          01 = month
+          a,b,f = alpha,beta,final
 */
-var websiteVersionVar = 'Version 201101f' ;
+var websiteVersionVar = 'Version 2.0.3' ;
     
   document.getElementById("websiteVersion").innerHTML = websiteVersionVar ;
 
@@ -18,24 +23,19 @@ var materialCountVar = '0' ;
 
 var badgeAddSelect = document.querySelectorAll(".bd-add");
   for (var i = 0; i <= badgeAddSelect.length - 1; i++) {
-    badgeAddSelect[i].textContent = 'Add';
+    badgeAddSelect[i].textContent = 'ADD';
   }
 var badgeRemoveSelect = document.querySelectorAll(".bd-remove");
   for (var i = 0; i <= badgeRemoveSelect.length - 1; i++) {
-    badgeRemoveSelect[i].textContent = 'Remove';
+    badgeRemoveSelect[i].textContent = 'REMOVE';
   }
 var badgeFixSelect = document.querySelectorAll(".bd-fix");
   for (var i = 0; i <= badgeFixSelect.length - 1; i++) {
-    badgeFixSelect[i].textContent = 'Fix';
+    badgeFixSelect[i].textContent = 'FIX';
   }
 var badgeChangeSelect = document.querySelectorAll(".bd-change");
   for (var i = 0; i <= badgeChangeSelect.length - 1; i++) {
-    badgeChangeSelect[i].textContent = 'Change';
+    badgeChangeSelect[i].textContent = 'CHANGE';
   }
-var badgeUploadSelect = document.querySelectorAll(".bd-upload");
-  for (var i = 0; i <= badgeUploadSelect.length - 1; i++) {
-    badgeUploadSelect[i].textContent = 'Upload';
-  }
-
 a = document.getElementById("websiteVersion");
-a.setAttribute("href", "https://theema-dev.github.io/highRES/help#version201101");
+a.setAttribute("href", "https://theema-dev.github.io/highRES/help#version2.0");

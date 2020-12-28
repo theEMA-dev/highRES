@@ -587,114 +587,92 @@ img {
     margin-right: 3vw;
   }
 }
-/* 700pxden küçük */
-@media only screen and (max-width: 700px) {
-  .col {
-    flex: 1 0 25%;
-    height: auto;
-  }
+/* 715pxden küçük */
+@media only screen and (max-width: 715px) {
+  .col {flex: 1 0 25%;height: auto;}
   .collection-col {flex: 1 0 90%; margin: 20px;}
   .changelog-col {flex: 1 0 90%; margin: 20px;}
-  .right {
-    float: none;
-    text-align: center;
-  }
-  .left h1 {
-    text-align: center;
-  }
-  .left {
-    float: none;
-    text-align: center;
-  }
-  .right #imgresize {
-    max-height: 20vw;
-    opacity: 1;
-    margin-left: 5vw;
+  #collectionInfo p {display: none;}
+  .right {float: none;text-align: center;}
+  .left h1 {text-align: center;}
+  .left {float: none;text-align: center;}
+  .right #imgresize {max-height: 20vw;opacity: 1;margin-left: 5vw;}
 }
 /* 620pxden küçük */
 @media only screen and (max-width: 620px) {
-  .col {
-    flex: 1 0 40%;
-    height: auto;
-    justify-content: center;
-  }
+  .col {flex: 1 0 40%;height: auto;justify-content: center;}
   .responsiveNav {display: none;}
-  .l1 {
-    position: absolute;
-    top: 50px;
-    background-color: #111111;
-  }
-  .l2 {
-    position: absolute;
-    top: 100px;
-    background-color: #111111;
-  }
-  .l3 {
-    position: absolute;
-    top: 150px;
-    background-color: #111111;
-  }
-  .l4 {
-    position: absolute;
-    top: 200px;
-    background-color: #111111;
-  }
-  .l5 {
-    position: absolute;
-    top: 250px;
-    background-color: #111111;
-    left: 0;
-  }
+  .l1 {position: absolute;top: 50px;background-color: #111111;}
+  .l2 {position: absolute;top: 100px;background-color: #111111;}
+  .l3 {position: absolute;top: 150px;background-color: #111111;}
+  .l4 {position: absolute;top: 200px;background-color: #111111;}
+  .l5 {position: absolute;top: 250px;background-color: #111111;left: 0;}
   li {padding: 0;}
-  .responsiveNav {
-    width: 100%;
-    text-align: center;
-  }
+  .responsiveNav {width: 100%;text-align: center;}
   .mobileNav {display: inline;}
 }
-/* 400pxden küçük */
+@media only screen and (max-width: 490px) {
+  .collectionContainer {display: none;}
+}
 @media only screen and (max-width: 400px) {
-  .col {
-    flex: 1 0 80%;
-    margin: 5px;
-    height: auto;
-    width: 100%;
-  }
-  .navhead a {
-    display: none;
-  }
-}}
+  .col {flex: 1 0 80%;margin: 5px;height: auto;width: 100%;}
+  .navhead a {display: none;}
+}
 /* COLLECTION SPESIFIC DESIGN STARTS */
-p#desc{
-  line-height: 5px;
-  margin-left: 1.2vw;
-  font-size: 1.2vw;
+.collectionContainer {
+  background-color: rgba(20, 20, 20, 0.5);
+  border-radius: 5px;
+  width: 97%;
+  height: 156px;
+  margin: 12px auto auto auto;
+  padding:10px;
+}
+.collectionContainer #desc{
+  margin-top: 0;
+  margin-left: 2%;
+  font-size: 0.9em;
   font-family: 'Roboto', sans-serif;
   color: rgb(128, 128, 128);
 }
+#collectionInfo {
+  display: inline;
+  float: right;
+  height: 100%;
+  margin-right: 2%;
+}
+#collectionInfo p { 
+  margin-top: 62px;
+  margin-left: 10px;
+  float: right;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2em;
+  border-radius: 5px;
+  padding: 5px;
+  padding-right: 7px;
+  padding-left: 6px;
+  border: 1px solid #b1b1b1;
+  color:  #b1b1b1;
+  cursor: default;
+}
 span#col-auth {
   font-style: italic;
-  font-size: 1.2vw;
+  font-size: 1em;
   font-family: 'Roboto', sans-serif;
   color: #b1b1b1;
 }
 img#lego-img {
-  max-width: 35%;
-  margin-left: 0.4vw;
-  margin-bottom: -15px;
-  margin-top: -15px;
+  margin-top: 5px;
+  width: 500px;
+  margin-left: 1.2%;
 }
 img#software-img {
-  max-width: 38%;
-  margin-left: 0.4vw;
-  margin-bottom: -15px;
-  margin-top: -5px;
+  width: 450px;
+  margin-left: 1.2%;
+  margin-top: 15px;
 }
 img#map-labs-img {
-  max-width: 30%;
-  margin-left: 1vw;
-  margin-bottom: -12px;
-  margin-top: -18px;
+  width: 320px;
+  margin-left: 1.2%;
 }
 body#lego {
   background-image: url(local/pattern-lego.png);

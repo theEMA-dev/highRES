@@ -145,6 +145,7 @@ img#splashResize {
   margin-right: 10px;
   float: right;
 }
+#gridCount,#materialCount,#websiteVersion,#gridRow {z-index: initial;}
 body#no-pattern{
   background-image: url(local/sitehero.webp);
   background-repeat: no-repeat;

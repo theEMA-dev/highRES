@@ -145,7 +145,7 @@ img#splashResize {
   margin-right: 10px;
   float: right;
 }
-body #no-pattern{
+body#no-pattern{
   background-image: url(local/sitehero.webp);
   background-repeat: no-repeat;
   background-color: #181818;

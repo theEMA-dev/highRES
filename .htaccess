@@ -1,6 +1,6 @@
 RewriteEngine on
 
-ErrorDocument 404 /errorcodes/404.html
+ErrorDocument 404 errorcodes/404.html
 
 RewriteCond %{REQUEST_FILENAME} !-d
 

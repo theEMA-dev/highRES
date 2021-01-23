@@ -2,5 +2,4 @@ RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.html -f
 RewriteRule ^(.*)$ $1.html [NC,L]
-Redirect 301 / https://theema-dev.github.io/highRES/503
 ErrorDocument 404 /404.html

@@ -557,12 +557,12 @@ img {
   vertical-align: 3px;
 }
 .mobileNav {display: none;}
-/* 404 */
-#--404 {
+/* ERROR PAGE STYLING */
+#--errorcodes {
   margin: auto;
 
 }
-#--404 h1 {
+#--errorcodes h1 {
   font-family: 'Roboto', sans-serif;
   font-weight: 800;
   font-size: 300px;
@@ -571,7 +571,7 @@ img {
   text-align: center;
   animation: Page404Anim 7s infinite;
 }
-#--404 p {
+#--errorcodes p {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   margin-top: -40px;
@@ -581,7 +581,7 @@ img {
   text-align: center;
   font-size: 2em;
 }
-#--404 a {
+#--errorcodes a {
   color: #c50038;
   animation: Page404Anim 7.8s infinite;
   text-decoration: none;
@@ -609,9 +609,9 @@ img {
   .splashIntro {
     display: none;
   }
-  #--404 h1 {font-size: 200px;}
-  #--404 p {font-size: 1.5em;}
-  #--404 a {font-size: 1em;}
+  #--errorcodes h1 {font-size: 200px;}
+  #--errorcodes p {font-size: 1.5em;}
+  #--errorcodes a {font-size: 1em;}
 }
 /* 800pxden küçük */
 @media only screen and (max-width: 800px) {
@@ -638,9 +638,9 @@ img {
   .left h1 {text-align: center;}
   .left {float: none;text-align: center;}
   .right #imgresize {max-height: 20vw;opacity: 1;margin-left: 5vw;}
-  #--404 h1 {font-size: 150px;}
-  #--404 p {font-size: 1.2em; margin-top: 10px;}
-  #--404 a {font-size: 1em;}
+  #--errorcodes h1 {font-size: 150px;}
+  #--errorcodes p {font-size: 1.2em; margin-top: 10px;}
+  #--errorcodes a {font-size: 1em;}
 }
 /* 620pxden küçük */
 @media only screen and (max-width: 620px) {
@@ -661,9 +661,9 @@ img {
 @media only screen and (max-width: 400px) {
   .col {flex: 1 0 80%;margin: 5px;height: auto;width: 100%;}
   .navhead a {display: none;}
-  #--404 h1 {font-size: 100px;}
-  #--404 p {font-size: 0.8em;}
-  #--404 a {font-size: 1em;}
+  #--errorcodes h1 {font-size: 100px;}
+  #--errorcodes p {font-size: 0.8em;}
+  #--errorcodes a {font-size: 1em;}
 }
 /* COLLECTION SPESIFIC DESIGN STARTS */
 .collectionContainer {

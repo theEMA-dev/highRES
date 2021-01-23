@@ -9,7 +9,7 @@
           01 = month
           a,b,f = alpha,beta,final
 */
-var websiteVersionVar = 'Version 2.0.6' ;
+var websiteVersionVar = 'Version 2.0.7' ;
     
   document.getElementById("websiteVersion").innerHTML = websiteVersionVar ;
 

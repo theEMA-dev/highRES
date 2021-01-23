@@ -6,4 +6,4 @@ RewriteCond %{REQUEST_FILENAME}\.html -f
 
 RewriteRule ^(.*)$ $1.html [NC,L]
 
-ErrorDocument 404 /local/errorcodes/404.html
+ErrorDocument 404 https://theema-dev.github.io/highRES/local/errorcodes/404.html

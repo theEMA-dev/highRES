@@ -5,8 +5,8 @@ function searchFunction() {
   var input, filter, ul, li, i, txtValue, placeholderDiv, noResult, count;
   placeholderDiv = document.createElement('div');
   placeholderDiv.classList.add("col");
-  noResult = document.getElementById('se-noresult-div');
-  input = document.getElementById('se-bar');
+  noResult = document.getElementById('--searchengine-alert');
+  input = document.getElementById('--searchengine-js-bridge');
   filter = input.value.toUpperCase();
   ul = document.getElementById("gridRow");
   li = ul.getElementsByClassName('col');

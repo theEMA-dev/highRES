@@ -227,14 +227,13 @@ p#infobadge {
   cursor: default;
 }
 /* SEARCH ENGINE STYLING STARTS */
-#se-search-div {
+.--searchengine {
   margin: auto;
-  text-align: center;
-  display: block;
-  margin-top: 24px;
-  margin-bottom: 14px;
 }
-input#se-bar {
+.--searchengine input {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  display: block;
   font-family: 'Roboto', sans-serif;
   background-image: url('local/search-engine.png');
   background-position: 10px 4.5px;
@@ -252,18 +251,18 @@ input#se-bar {
   -moz-box-shadow: 0px 10px 10px -1px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 0px 10px -1px rgba(0, 0, 0, 0.5);
 }
-input#se-bar:focus {
+.--searchengine input:focus{
   width: 65%;
   outline: none;
 }
-#se-noresult-div {
+#--searchengine-alert {
   margin: auto;
   text-align: center;
   display: block;
   margin-top: 12vh;
   margin-bottom: 46vh;
 }
-#se-noresult-p {
+#--searchengine-alert-noresult {
   margin: 0;
   font-family: 'Roboto', sans-serif;
   color:#b1b1b1;

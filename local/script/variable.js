@@ -9,11 +9,11 @@
           01 = month
           a,b,f = alpha,beta,final
 */
-var websiteVersionVar = 'Version 2.0.7' ;
+var websiteVersionVar = 'Version 2.0.8' ;
     
   document.getElementById("websiteVersion").innerHTML = websiteVersionVar ;
 
-var gridCountVar = '99' ;
+var gridCountVar = '100' ;
     
   document.getElementById("gridCount").innerHTML = gridCountVar ;
 

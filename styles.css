@@ -95,6 +95,35 @@ nav #nav-logo-resize {
   margin-top: 13px;
   margin-bottom: 7px;
 }
+.alert {
+  display: inline-block;
+  width: 25%;
+  height: 50px;
+  margin-left: 14px;
+  position: absolute;
+  cursor: default;
+}
+.alert p:hover {
+  color: #b1b1b1;
+  border-color: #b1b1b1;
+  border-style: dashed;
+}
+.alert p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 0.85em;
+  top: 13px;
+  position: absolute;
+  margin: auto;
+  vertical-align: middle;
+  padding-left: 10px;
+  padding-bottom: 3px;
+  padding-right: 7px;
+  border: 1.7px solid #df003f;
+  border-radius: 15px;
+  color: #df003f;
+  transition: all 400ms;
+}
 .noLazyLoad {
   opacity: 1;
 }
@@ -626,6 +655,7 @@ img {
     margin-top: 8vw;
     margin-right: 3vw;
   }
+  .alert {display: none;}
 }
 /* 715pxden küçük */
 @media only screen and (max-width: 715px) {

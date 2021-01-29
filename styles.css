@@ -97,7 +97,7 @@ nav #nav-logo-resize {
 }
 .alert {
   display: inline-block;
-  width: 25%;
+  width: 165px;
   height: 50px;
   margin-left: 14px;
   position: absolute;
@@ -107,6 +107,9 @@ nav #nav-logo-resize {
   color: #b1b1b1;
   border-color: #b1b1b1;
   border-style: dashed;
+}
+.alert.milestone {
+  color: #df003f;
 }
 .alert p {
   font-family: 'Roboto', sans-serif;
@@ -119,9 +122,10 @@ nav #nav-logo-resize {
   padding-left: 10px;
   padding-bottom: 3px;
   padding-right: 7px;
-  border: 1.7px solid #df003f;
+  border: 1.7px solid;
+  border-color: inherit;
   border-radius: 15px;
-  color: #df003f;
+  color: inherit;
   transition: all 400ms;
 }
 .noLazyLoad {

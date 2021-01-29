@@ -11,13 +11,13 @@
 */
 var alertTitle = document.querySelectorAll(".alert");
 
-  alertTitle[0].title = 'Uncategorized: 30\nMap Labs Collection: 52\nLEGO Collection: 8\nSoftware Collection: 10'
+  alertTitle[0].title = 'Uncategorized: 30\nMap Labs Collection: 52\nLEGO Collection: 9\nSoftware Collection: 10'
 
 var websiteVersionVar = 'Version 2.0.8' ;
     
   document.getElementById("websiteVersion").innerHTML = websiteVersionVar ;
 
-var gridCountVar = '100' ;
+var gridCountVar = '101' ;
     
   document.getElementById("gridCount").innerHTML = gridCountVar ;
 

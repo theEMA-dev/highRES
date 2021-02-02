@@ -17,11 +17,11 @@ var websiteVersionVar = 'Version 2.0.8' ;
     
   document.getElementById("websiteVersion").innerHTML = websiteVersionVar ;
 
-var gridCountVar = '101' ;
+var gridCountVar = '102' ;
     
   document.getElementById("gridCount").innerHTML = gridCountVar ;
 
-var gridCategoriesVar = 'Uncategorized: 30\nMap Labs Collection: 52\nLEGO Collection: 8\nSoftware Collection: 10' ;
+var gridCategoriesVar = 'Uncategorized: 30\nMap Labs Collection: 53\nLEGO Collection: 8\nSoftware Collection: 10' ;
 
   document.getElementById("gridCount").title = gridCategoriesVar ;
 

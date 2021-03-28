@@ -14,7 +14,7 @@ var alertTitle = document.querySelectorAll(".alert");
   alertTitle[0].style.display = 'none' ;
   alertTitle[0].innerHTML = '<p>placeholder</p>' ;
 
-  document.getElementById("websiteVersion").innerHTML = 'Version 2.1.3' ;
+  document.getElementById("websiteVersion").innerHTML = 'Version 2.1.4' ;
   document.getElementById("gridCount").innerHTML = '104' ;
   document.getElementById("gridCount").title = 'Uncategorized: 30\nMap Labs Collection: 55\nLEGO Collection: 8\nSoftware Collection: 10' ;
   document.getElementById("materialCount").innerHTML = '0' ;
@@ -36,4 +36,4 @@ var badgeChangeSelect = document.querySelectorAll(".bd-change");
     badgeChangeSelect[i].textContent = 'CHANGE';
   }
 a = document.getElementById("websiteVersion");
-a.setAttribute("href", "https://theema-dev.github.io/highRES/help#version2.1");
+a.setAttribute("href", "https://theema-dev.github.io/highRES/help");

@@ -302,10 +302,10 @@ p#infobadge {
 /* ABOUT PAGE STARTS */
 #post-area {
   margin: auto;
-  width: 80%;
+  width: 94%;
   border-radius: 6px;
-  background-color: #141414;
-  margin-bottom: 30px;
+  background-color: rgba(20, 20, 20, 0.904);
+  margin-bottom: 40px;
 }
 .post-preset {
   margin-left: 2.8vw;
@@ -335,21 +335,6 @@ p#infobadge {
   font-weight: 400;
   font-size: 1em;
  }
-:target {
-  padding-left: 5px;
-  background-color: #141414;
-  animation-name: changelogHyperlinkAnim;
-  animation-duration: 2.8s;
-  border-radius: 2px;
-  scroll-margin-top: 100px;
-}
-@keyframes changelogHyperlinkAnim {
-  from {background-color: #141414;}
-  25% {background-color: #383838;}
-  50% {background-color: #141414;}
-  75% {background-color: #383838;}
-  100% {background-color: #141414;}
-}
 mark {
   font-size: 12px;
   border-radius: 3px;
@@ -504,25 +489,24 @@ img {
   align-items: baseline;
   justify-content: center;
 }
-.changelog-col {
-  flex: 1 0 40%;
-  margin: 10px;
-  border-radius: 6px;
-  padding-bottom: 15px;
-  width: 50%;
-  background-color: #141414;
-  display: block;
-  align-items: baseline;
+.wrapper {
+  width: 100%;
+  overflow: auto;
+  margin: auto;
 }
-.changelog-col h1{
-  margin-top: 0;
-  margin-bottom: -18px;
-  padding-left: 8px;
-  padding: 10px;
-  color: #eb0042;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  font-size: 1.7em;
+.wrap-right {float: right; width: 50%;}
+.wrap-left {float: left; width: 50%;}
+.changelog-grid {
+  display: grid;
+  grid-template-columns: auto;
+  row-gap: 16px;
+}
+.changelog-col {
+  margin: 1px 26px 12px 26px;
+  border-radius: 6px;
+  padding-bottom: 1px;
+  background-color: #141414;
+  display: grid;
 }
 .changelog-col h2{
   color: #b1b1b1;
@@ -537,6 +521,7 @@ img {
 .changelog-col hr{
   padding: 0;
   margin: 0;
+  border: 0;
   border-top: 1px solid #c50038;
   border-style: solid;
 }
@@ -584,6 +569,33 @@ img {
   font-size: 12px;
   font-weight: 400;
   vertical-align: 3px;
+}
+/* CHANGELOG COLLAPSIBLES */
+.collapsible {
+  background-color: #14141400;
+  background-image: url('local/collapsible-closed.svg');
+  background-position: 99.5% 2.5px;
+  background-size: 48px;
+  background-repeat: no-repeat;
+  color: #eb0042;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 1.7em;
+  outline: none;
+  border: none;
+  margin-left: 6px;
+  padding: 10px;
+  width: 99%;
+  text-align: left;
+  cursor: pointer;
+}
+.active {
+  background-image: url('local/collapsible-open.svg');
+}
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
 }
 .mobileNav {display: none;}
 /* ERROR PAGE STYLING */

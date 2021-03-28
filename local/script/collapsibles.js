@@ -1,0 +1,1 @@
+var i,c=document.getElementsByClassName("collapsible");for(i=0;i<c.length;i++)c[i].addEventListener("click",function(){this.classList.toggle("active");var e=this.nextElementSibling;e.style.maxHeight?e.style.maxHeight=null:e.style.maxHeight=e.scrollHeight+"px"});

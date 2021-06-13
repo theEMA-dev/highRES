@@ -54,7 +54,7 @@ nav a:hover {
 .nav-dropdown {
   position: relative;
   display: inline-block;
-  padding-bottom: 5px;
+  padding-bottom: 0.1px;
 }
 .nav-icon {
   display: inline-block;
@@ -77,6 +77,7 @@ nav a:hover {
   background-color:  rgba(25,25,25);
   width: 100%;
   z-index: 1;
+  padding-bottom: 8px;
 }
 .dropdown-content a {
   color: #c50038;

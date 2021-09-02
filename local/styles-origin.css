@@ -727,7 +727,7 @@ img#map-labs-img {
   margin-left: 1.2%;
 }
 body#lego {
-  background-image: url(pattern-lego.png);
+  background-image: url(local/pattern-lego.png);
   background-repeat: repeat;
 }
 body#software {

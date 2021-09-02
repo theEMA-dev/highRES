@@ -17,12 +17,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../local/imageloader.css">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="icon" href="../favicon.ico" type="image/x-icon" />
     <script defer src="../app.js"></script>
   </head>
 <body id="software">
+  <!-- IMAGELOADER -->
+  <div class="imageloader">
+    <div class="spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+  </div>
   <!-- NAVIGATION -->
   <nav>
     <a href="https://theema-dev.github.io/highRES/"><img class="noLazyLoad" id="nav-logo-resize" src="https://theema-dev.github.io/highRES/local/nav-logo1.webp"></a>
@@ -82,14 +87,18 @@
     </div>
   </div>
   <script src="https://unpkg.com/zooming/build/zooming.min.js"></script>
-  <script src="local/script/mobileNav.js"></script>
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        new Zooming({
-          bgColor: "rgb(17, 17, 17)", bgOpacity: 0.9
-        }).listen('.zoomVER')
-      })
-    </script>
+  <script src="../local/script/mobileNav.js"></script>
+  <script src="../local/script/imageloader.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      new Zooming({
+        onImageLoading: function(){imageloader();},
+        onImageLoaded: function(){imageunloader();},
+        onClose: function(){imageunloader();},
+        bgColor: "rgb(17, 17, 17)", bgOpacity: 0.9
+      }).listen('.zoomVER')
+    })
+  </script>
   <script src="../local/script/mobileNav.js"></script>
   <script src="../local/script/variable.js"></script>
 </body>

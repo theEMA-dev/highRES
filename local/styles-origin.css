@@ -1,4 +1,4 @@
-/* minified 02.09.21 22.00*/
+/* minified 02.09.21 22.56*/
 /* NAVIGATION STYLING START */
 nav {
   background: rgb(17, 17, 17);
@@ -671,8 +671,7 @@ img {
   background-color: rgba(20, 20, 20, 0.5);
   width: 100%;
   height: 160px;
-  margin: -5px auto auto auto;
-  padding:10px;
+  padding:10px 0;
 }
 .collectionContainer #desc{
   margin-top: 0;

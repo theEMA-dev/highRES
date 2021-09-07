@@ -657,18 +657,16 @@ img {
     height: 100%;
     position: relative;
     margin: 0;
-    top: 0x;
     left: 0;
-    -ms-transform: 0;
-    transform: 0;
   }
   .right img {
     display:block;
     position: relative;
     margin: auto;
-    left: 0;
-    -ms-transform: 0;
-    transform: 0;
+    top: 25px;
+    left: 0px;
+    -ms-transform: none;
+    transform: none;
   }
   .left {
     text-align: center;

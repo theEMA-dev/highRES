@@ -187,6 +187,12 @@ body#no-pattern{
 }
 body {background-color: #181818;margin: 0;}
 .footer {
+  display: grid; 
+  grid-auto-rows: 1fr; 
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: auto; 
+  grid-template-areas: 
+    "left right";
   margin-top: 20px;
   min-height: 16vw;
   width: 100%;
@@ -197,40 +203,46 @@ body {background-color: #181818;margin: 0;}
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#111111",endColorstr="#430015",GradientType=1);
   position: absolute;
 }
-.left {
-  float: left;
-  margin-top: 2.6354319180087846vw;
-  margin-left: 3vw;
+.left {grid-area: left;}
+.right {grid-area: right;}
+.textbox {
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  left: 3%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
-.right {
-  float: right;
-  margin-top: 4.7vw;
-  margin-right: 3vw;
-}
-.right #imgresize {
-  max-height: 7.320644216691069vw;
+.right img {
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  right: 5%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  max-height: calc(40px + 5vw);
 }
 .left p {
   color: rgb(128, 128, 128);
   font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  font-size: 13px;
+  letter-spacing: 0.3px;
+  font-weight: 400;
+  font-size: 0.9vw;
   line-height: 1em;
   margin-left: 2px;
 }
 .left h1 {
   color: rgb(177, 177, 177);
   font-family: 'Roboto', sans-serif;
-  font-size: 1.4em;
+  font-size: 1.7vw;
   font-weight: 500;
   line-height: 20px;
-  margin-top: 15px;
 }
 .left a , #post-area a{
   color: #b1b1b1;
   text-decoration: none;
 }
-.left a:hover, #post-area a:hover{
+a:hover{
   color: #ff0149;
   text-decoration: none;
 }
@@ -607,14 +619,14 @@ img {
     flex: 1 0 18%;
     height: auto;
   }
-  .right {
-    float: right;
-    margin-top: 6vw;
-    margin-right: 3vw;
-  }
   .splashIntro {
     display: none;
   }
+  .footer {min-height: 20vw;}
+  .left h1 {
+    font-size: calc(16px + 0.4vw);
+  }
+  .left p {font-size: calc(8px + 0.3vw);line-height: 7px;}
 }
 @media only screen and (max-width: 800px) {
   .row {margin: 14px;}
@@ -625,11 +637,6 @@ img {
   .changelog-col {
     flex: 1 0 80%;
   }
-  .right {
-    float: right;
-    margin-top: 8vw;
-    margin-right: 3vw;
-  }
   .alert {display: none;}
 }
 @media only screen and (max-width: 715px) {
@@ -637,10 +644,39 @@ img {
   .collection-col {flex: 1 0 90%; margin: 20px;}
   .changelog-col {flex: 1 0 90%; margin: 20px;}
   #collectionInfo p {display: none;}
-  .right {float: none;text-align: center;}
-  .left h1 {text-align: center;}
-  .left {float: none;text-align: center;}
-  .right #imgresize {max-height: 20vw;opacity: 1;margin-left: 5vw;}
+  .footer {
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "left"
+      "right"; 
+  }
+  .textbox {
+    height: 100%;
+    position: relative;
+    margin: 0;
+    top: 0x;
+    left: 0;
+    -ms-transform: 0;
+    transform: 0;
+  }
+  .right img {
+    display:block;
+    position: relative;
+    margin: auto;
+    left: 0;
+    -ms-transform: 0;
+    transform: 0;
+  }
+  .left {
+    text-align: center;
+  }
+  .left h1 {
+    font-size: calc(16px + 1vw);
+  }
+  .left p {font-size: calc(8px + 0.7vw);line-height: 10px;}
 }
 @media only screen and (max-width: 620px) {
   .col {flex: 1 0 40%;height: auto;justify-content: center;}

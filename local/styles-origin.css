@@ -622,6 +622,7 @@ img {
   .splashIntro {
     display: none;
   }
+  .wrapper {display: none;}
   .footer {min-height: 20vw;}
   .left h1 {
     font-size: calc(16px + 0.4vw);

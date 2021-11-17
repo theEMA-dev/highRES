@@ -14,7 +14,7 @@ var alertTitle = document.querySelectorAll(".alert");
   alertTitle[0].style.display = 'none' ;
   alertTitle[0].innerHTML = '<p>placeholder</p>' ;
 
-  document.getElementById("websiteVersion").innerHTML = 'Version 2.1.6' ;
+  document.getElementById("websiteVersion").innerHTML = 'Version 1.6.1' ;
   document.getElementById("gridCount").innerHTML = '106' ;
   document.getElementById("gridCount").title = 'Uncategorized: 30\nMap Labs Collection: 57\nLEGO Collection: 8\nSoftware Collection: 10' ;
   document.getElementById("materialCount").innerHTML = '0' ;

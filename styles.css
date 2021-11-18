@@ -351,6 +351,7 @@ p#infobadge {
   font-size: 1em;
  }
 mark {
+  background-color: rgb(243, 219, 0);
   font-size: 12px;
   border-radius: 3px;
   padding: 1.5px;
@@ -503,16 +504,6 @@ img {
   align-items: baseline;
   justify-content: center;
 }
-.wrapper {
-  width: 100%;
-  overflow: auto;
-  margin: auto;
-}
-.changelog-grid {
-  display: grid;
-  grid-template-columns: auto;
-  row-gap: 16px;
-}
 .changelog-col {
   width: 94%;
   margin: auto;
@@ -538,12 +529,13 @@ img {
   border-style: solid;
 }
 .changelog-col p{
-  margin-left: 2vw;
+  margin: auto 8px auto 2vw;
   color: #808080;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   line-height: 22px;
   font-size: 0.9em;
+  cursor: default;
  }
  .changelog-col b {
   font-weight: 500;
@@ -630,15 +622,11 @@ img {
     flex: 1 0 20%;
     height: auto;
   }
-  .changelog-col {
-    flex: 1 0 80%;
-  }
   .alert {display: none;}
 }
 @media only screen and (max-width: 715px) {
   .col {flex: 1 0 25%;height: auto;}
   .collection-col {flex: 1 0 90%; margin: 20px;}
-  .changelog-col {flex: 1 0 90%; margin: 20px;}
   #collectionInfo p {display: none;}
   .footer {
     display: grid; 
@@ -671,6 +659,7 @@ img {
     font-size: calc(16px + 1vw);
   }
   .left p {font-size: calc(8px + 0.7vw);line-height: 10px;}
+  .content p i{display: none;}
 }
 @media only screen and (max-width: 620px) {
   .col {flex: 1 0 40%;height: auto;justify-content: center;}
@@ -695,6 +684,7 @@ img {
   .row {margin: 15px;}
   .col {flex: 1 0 80%;margin: 5px;height: auto;width: 100%;}
   .navhead a {display: none;}
+  .content h2 b{display: none;}
 }
 /* COLLECTION SPESIFIC DESIGN STARTS */
 .collectionContainer {

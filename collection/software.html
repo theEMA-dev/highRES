@@ -18,7 +18,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="../local/imageloader.css">
-    <!-- Fonts -->
+    <!-- RELATIONS -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="icon" href="../favicon.ico" type="image/x-icon" />
     <script defer src="../app.js"></script>
@@ -88,7 +88,6 @@
       <a href="https://www.steamgriddb.com/profile/76561198165563784" rel="nofollow"><img class="noLazyLoad" src="../local/footer-logo.png" alt=""></a>
     </div>
   </div>
-  </div>
   <script src="https://unpkg.com/zooming/build/zooming.min.js"></script>
   <script src="../local/script/mobileNav.js"></script>
   <script src="../local/script/imageloader.js"></script>
@@ -98,7 +97,7 @@
         onImageLoading: function(){imageloader();},
         onImageLoaded: function(){imageunloader();},
         onClose: function(){imageunloader();},
-        bgColor: "rgb(17, 17, 17)", bgOpacity: 0.9
+        bgColor: "rgb(17, 17, 17)", bgOpacity: 0.9, scaleBase: 0.9
       }).listen('.zoomVER')
     })
   </script>

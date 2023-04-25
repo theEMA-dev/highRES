@@ -11,7 +11,7 @@ function searchFunction() {
   result = ul.getElementsByClassName('se-shown');
   txtValue = 0;
   for (i = 0; i < li.length; i++) {
-    txtValue = li[i].getElementsByTagName("a")[0].title;
+    txtValue = li[i].getElementsByTagName("img")[0].alt;
     if (txtValue.toUpperCase().indexOf(filter) > -1) {
       li[i].style.display = "";
       li[i].classList.add('se-shown');

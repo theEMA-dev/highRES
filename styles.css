@@ -31,11 +31,11 @@ li.current {
 .nav-dropdown:hover {
   background-color: rgba(25,25,25);
 }
-nav a {
+nav li a {
   color: #c50038;
   text-decoration: none;
   font-family: 'Roboto', sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 15px;
 }
 nav a:hover {
@@ -47,15 +47,14 @@ nav a:hover {
   color: #c50038;
   text-decoration: none;
   font-family: 'Roboto', sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 15px;
   border: none;
   cursor: pointer;
 }
 .nav-dropdown {
   position: relative;
-  display: inline-block;
-  padding-bottom: 0.1px;
+  display: inline;
 }
 .nav-icon {
   display: inline-block;
@@ -84,6 +83,7 @@ nav a:hover {
   color: #c50038;
   line-height: 36px;
   text-decoration: none;
+  width: 100%;
   display: block;
   text-align: center;
 }
@@ -91,11 +91,21 @@ nav a:hover {
 .nav-dropdown:hover .dropdown-content {
   display: block;
 }
-nav #nav-logo-resize {
-  max-height: 1.5rem;
-  margin-left: 3%;
-  margin-top: 13px;
-  margin-bottom: 7px;
+.branding {display: inline; height: 50px;}
+.branding img {
+  height: 1.3rem;
+  margin-left: 1.8em;
+  margin-top: 14px;
+}
+.branding h1 {
+  display: inline;
+  position: absolute;
+  color: #c50038;
+  padding: 7px;
+  margin-top: 6px;
+  font-family: 'Tomorrow', sans-serif;
+  font-size: 17px;
+  font-weight: 500;
 }
 .alert {
   color: #df003f;
@@ -195,7 +205,7 @@ body {background-color: #181818;margin: 0;}
   grid-template-areas: 
     "left right";
   margin-top: 20px;
-  min-height: 16vw;
+  min-height: 270px;
   width: 100%;
   background: rgb(17,17,17);
   background: -moz-linear-gradient(236deg, rgba(17,17,17,1) 39%, rgba(67,0,21,1) 77%);
@@ -235,14 +245,14 @@ body {background-color: #181818;margin: 0;}
   font-family: 'Roboto', sans-serif;
   letter-spacing: 0.3px;
   font-weight: 400;
-  font-size: 0.9vw;
-  line-height: 1em;
+  font-size: 14px;
+  line-height: 18px;
   margin-left: 2px;
 }
 .left h1 {
   color: rgb(177, 177, 177);
   font-family: 'Roboto', sans-serif;
-  font-size: 1.7vw;
+  font-size: 25px;
   font-weight: 500;
   line-height: 20px;
 }
@@ -331,28 +341,25 @@ p#infobadge {
   margin-bottom: 20px;
 }
 .post-preset {
-  margin-left: 2.8vw;
+  margin-left: 3.3vw;
   margin-right: 2.5vw;
 }
 .post-preset h1{
   padding-top: 2vw;
-  font-weight: 300;
+  font-weight: 200;
   font-size: 2.3em;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Tomorrow', sans-serif;
   color: #eb0042;
-  margin-bottom: -10px;
 }
 .post-preset h2 {
   font-family: 'Roboto', sans-serif;
   font-size: 1.4em;
   font-weight: 500;
   color:#b1b1b1;
-  margin-left: 0.5vw;
   margin-bottom: -12px;
 }
 .post-preset p {
   margin-bottom: 25px;
-  margin-left: 0.5vw;
   color: #808080;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
@@ -597,11 +604,7 @@ img {
   .splashIntro {
     display: none;
   }
-  .footer {min-height: 20vw;}
-  .left h1 {
-    font-size: calc(16px + 0.4vw);
-  }
-  .left p {font-size: calc(8px + 0.3vw);line-height: 7px;}
+  .right img {max-height: 5vw;}
 }
 @media only screen and (max-width: 800px) {
   .row {margin: 14px;}
@@ -609,6 +612,9 @@ img {
     flex: 1 0 20%;
     height: auto;
   }
+  .left h1 {font-size: 18px;}
+  .left p {font-size: 12px;}
+  .right img {max-height: 5vw;}
   .alert {display: none;}
   #collectionInfo p {display: none;}
 }
@@ -634,6 +640,7 @@ img {
     display:block;
     position: relative;
     margin: auto;
+    max-height: 55px;
     top: 25px;
     left: 0px;
     -ms-transform: none;
@@ -644,8 +651,8 @@ img {
   }
   .left h1 {
     font-size: calc(16px + 1vw);
+    margin-top: 40px;
   }
-  .left p {font-size: calc(8px + 0.7vw);line-height: 10px;}
   .content p i{display: none;}
 }
 @media only screen and (max-width: 620px) {

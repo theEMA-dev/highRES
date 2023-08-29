@@ -426,14 +426,13 @@ mark.bd-fix {
   opacity: 1;
   filter: invert(70%);
 }
-.gridInfo img:hover {filter: invert(100%); transition: ease-in-out all 200ms;}
+.badges img:hover {filter: invert(100%); transition: ease-in-out all 200ms;}
 .gridInfo p {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   margin-top: 2px;
   font-size: 0.75em;
   color: #dddddd;
-  margin-right: 5px;
   padding: 0;
   cursor: default;
 }
@@ -445,6 +444,23 @@ mark.bd-fix {
   color: #dddddd;
   text-decoration: none;
 }
+.details img {
+  display: inline;
+  opacity: 1;
+  margin-left: 3px;
+  padding: 0;
+  width: 0.85em;
+  margin-bottom: -1px;
+  transition: ease-in-out all 200ms;
+}
+.details a p{transition: ease-in-out all 200ms;}
+.details a:hover > img {filter: drop-shadow(0px 0px 1px #ffffff) drop-shadow(0px 0px 2px rgba(212, 212, 212, 0.6));}
+.details a {
+  display: inline;
+  text-decoration: none;
+  pointer-events: visible;
+}
+.details p {display: inline; cursor: pointer;}
 /* FLEX GRID SECTION STARTS */
 .row {
   margin: 4px;

@@ -14,14 +14,14 @@ var alertTitle = document.querySelectorAll(".alert");
   alertTitle[0].style.display = 'none' ;
   alertTitle[0].innerHTML = '<p>placeholder</p>' ;
 
-  document.getElementById("websiteVersion").innerHTML = 'Version 1.6.6' ;
-  document.getElementById("gridCount").innerHTML = '109' ;
-  document.getElementById("gridCount").title = 'Uncategorized: 33\nMap Labs Collection: 57\nLEGO Collection: 8\nSoftware Collection: 10' ;
+  document.getElementById("websiteVersion").innerHTML = 'Version 1.7.2' ;
+  document.getElementById("gridCount").innerHTML = '110' ;
+  document.getElementById("gridCount").title = 'Uncategorized: 34\nMap Labs Collection: 57\nLEGO Collection: 8\nSoftware Collection: 10' ;
   document.getElementById("materialCount").innerHTML = '0' ;
   
 var badgeAddSelect = document.querySelectorAll(".bd-add");
   for (var i = 0; i <= badgeAddSelect.length - 1; i++) {
-    badgeAddSelect[i].textContent = 'ADD';
+    badgeAddSelect[i].textContent = 'NEW';
   }
 var badgeRemoveSelect = document.querySelectorAll(".bd-remove");
   for (var i = 0; i <= badgeRemoveSelect.length - 1; i++) {

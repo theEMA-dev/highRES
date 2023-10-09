@@ -1,10 +1,10 @@
 function searchFunction() {
   //#
-  //#   highRES Search Engine 1.1
+  //#   Vault - Main - Search Engine v1
   //#
   var input,filter,ul,li,i,l,txtValue,placeholderDiv,result,noResult;
-  noResult = document.getElementById('--searchengine-alert');
-  input = document.getElementById('--searchengine-js-bridge');
+  noResult = document.getElementById('vaultmain-searchengine-alert');
+  input = document.getElementById('vaultmain-searchengine-js-bridge');
   filter = input.value.toUpperCase();
   ul = document.getElementById("gridRow");
   li = ul.getElementsByClassName('col');

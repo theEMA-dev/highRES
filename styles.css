@@ -611,6 +611,95 @@ img {
   transition: max-height 0.3s ease-out;
 }
 .mobileNav {display: none;}
+/* COLLECTION SPESIFIC DESIGN STARTS */
+.collectionContainer {
+  background: rgba(24, 26, 27, 0.5);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  width: 100%;
+  margin-top: -6px;
+  padding:20px 0;
+}
+.collectionContainer p {
+  margin-top: 0;
+  margin-left: 1.5rem;
+  padding: 0px 15px;
+  font-size: 0.9em;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(128, 128, 128);
+}
+#collectionInfo {
+  display: inline;
+  float: right;
+  height: 100%;
+  margin-right: 2%;
+}
+#collectionInfo p { 
+  margin-top: 62px;
+  margin-left: 10px;
+  float: right;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2em;
+  border-radius: 5px;
+  padding: 5px;
+  padding-right: 7px;
+  padding-left: 6px;
+  border: 1px solid #b1b1b1;
+  color:  #b1b1b1;
+  cursor: default;
+}
+.collectionContainer a {
+  font-style: italic;
+  text-decoration: none;
+  font-size: 1em;
+  font-family: 'Roboto', sans-serif;
+  color: #b1b1b1;
+}
+.collectionContainer a:hover {
+  transition: all 300ms;
+}
+.collectionContainer img {margin-left: 1.5rem;}
+#lego .collectionContainer {
+  -webkit-box-shadow: inset 0px -180px 60px -190px rgba(240, 221, 50, 0.7);
+  -moz-box-shadow: inset 0px -180px 60px -190px rgba(240, 221, 50, 0.7);
+  box-shadow: inset 0px -180px 60px -200px rgba(240, 221, 50, 0.7);
+}
+#map-labs .collectionContainer {
+  -webkit-box-shadow: inset 0px -180px 60px -190px rgba(95, 214, 48, 0.7);;
+  -moz-box-shadow: inset 0px -180px 60px -190px rgba(95, 214, 48, 0.7);;
+  box-shadow: inset 0px -180px 60px -200px rgba(95, 214, 48, 0.7);
+}
+#software .collectionContainer {
+  -webkit-box-shadow: inset 0px -180px 60px -190px rgba(161, 47, 255, 0.7);
+  -moz-box-shadow: inset 0px -180px 60px -190px rgba(161, 47, 255, 0.7);
+  box-shadow: inset 0px -180px 60px -200px rgba(161, 47, 255, 0.7);
+}
+#lego .collectionContainer #collectionInfo p , #lego .collectionContainer a:hover{color: #f0de32; border-color: #f0de32;}
+#map-labs .collectionContainer #collectionInfo p , #map-labs .collectionContainer a:hover {color: #5fd630; border-color: #5fd630;}
+#software .collectionContainer #collectionInfo p , #software .collectionContainer a:hover {color: #a12fff; border-color: #a12fff;}
+#lego .collectionContainer img {
+  margin-top: 5px;
+  width: 500px;
+}
+#software .collectionContainer img {
+  width: 450px;
+  margin-top: 15px;
+}
+#map-labs .collectionContainer img {
+  width: 320px;
+}
+body#lego {
+  background-image: url(local/pattern-lego.png);
+  background-repeat: repeat;
+}
+body#software {
+  background-image: url(local/pattern-software.png);
+  background-repeat: repeat;
+}
+body#map-labs {
+  background-image: url(local/pattern-map-labs.png);
+  background-repeat: repeat;
+}
 /* MEDIA QUARIES */
 @media only screen and (max-width: 900px) {
   .col {
@@ -633,6 +722,8 @@ img {
   .right img {max-height: 5vw;}
   .alert {display: none;}
   #collectionInfo p {display: none;}
+  .collectionContainer img {display: block; margin-left: auto; margin-right: auto;}
+  .collectionContainer p {display: block; margin: 10px auto 10px auto; text-align: center;}
 }
 @media only screen and (max-width: 715px) {
   .col {flex: 1 0 25%;height: auto;}
@@ -686,10 +777,10 @@ img {
   .responsiveNav {width: 100%;text-align: center;}
   .mobileNav {display: inline;}
   .branding img {margin-left: 0px; padding-left: 1rem;}
+  .collectionContainer img {width: 85% !important;}
 }
 @media only screen and (max-width: 490px) {
   .row {margin: 17px;}
-  .collectionContainer {display: none;}
   .left p {font-size: 10px;}
 }
 @media only screen and (max-width: 400px) {
@@ -698,76 +789,4 @@ img {
   .col {flex: 1 0 80%;margin: 5px;height: auto;width: 100%;}
   .navhead a {display: none;}
   .content h2 b{display: none;}
-}
-/* COLLECTION SPESIFIC DESIGN STARTS */
-.collectionContainer {
-  background-color: rgba(20, 20, 20, 0.5);
-  width: 100%;
-  height: 165px;
-  margin-top: -6px;
-  padding:10px 0;
-}
-.collectionContainer #desc{
-  margin-top: 0;
-  margin-left: 2%;
-  font-size: 0.9em;
-  font-family: 'Roboto', sans-serif;
-  color: rgb(128, 128, 128);
-}
-#collectionInfo {
-  display: inline;
-  float: right;
-  height: 100%;
-  margin-right: 2%;
-}
-#collectionInfo p { 
-  margin-top: 62px;
-  margin-left: 10px;
-  float: right;
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.2em;
-  border-radius: 5px;
-  padding: 5px;
-  padding-right: 7px;
-  padding-left: 6px;
-  border: 1px solid #b1b1b1;
-  color:  #b1b1b1;
-  cursor: default;
-}
-a#col-auth {
-  font-style: italic;
-  text-decoration: none;
-  font-size: 1em;
-  font-family: 'Roboto', sans-serif;
-  color: #b1b1b1;
-}
-a#col-auth:hover {
-  color: var(--accent);
-  transition: all 300ms;
-}
-img#lego-img {
-  margin-top: 5px;
-  width: 500px;
-  margin-left: 1.2%;
-}
-img#software-img {
-  width: 450px;
-  margin-left: 1.2%;
-  margin-top: 15px;
-}
-img#map-labs-img {
-  width: 320px;
-  margin-left: 1.3%;
-}
-body#lego {
-  background-image: url(local/pattern-lego.png);
-  background-repeat: repeat;
-}
-body#software {
-  background-image: url(local/pattern-software.png);
-  background-repeat: repeat;
-}
-body#map-labs {
-  background-image: url(local/pattern-map-labs.png);
-  background-repeat: repeat;
 }

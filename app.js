@@ -1,1 +1,30 @@
-const targets=document.querySelectorAll("#load"),lazyLoad=e=>{new IntersectionObserver((e,t)=>{console.log(e),e.forEach(e=>{if(console.log("lazyLoaded"),e.isIntersecting){const o=e.target,s=o.getAttribute("data-lazy");o.setAttribute("src",s),o.classList.add("fade"),t.disconnect()}})}).observe(e)};targets.forEach(lazyLoad);
+const targets = document.querySelectorAll("a");
+
+const lazyLoad = target => {
+  const img = target.querySelector("img#load");
+  const skeleton = target.querySelector(".skeleton");
+
+  // Check if the img and skeleton exist before proceeding
+  if (!img || !skeleton) {
+    return;
+  }
+
+  const io = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const src = img.getAttribute("data-src");
+
+        img.setAttribute("src", src);
+        img.style.display = 'block'; // Show the image
+
+        skeleton.style.display = 'none'; // Hide the skeleton
+
+        observer.disconnect();
+      }
+    });
+  });
+
+  io.observe(target);
+};
+
+targets.forEach(lazyLoad);

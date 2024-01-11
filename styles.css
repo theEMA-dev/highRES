@@ -140,49 +140,6 @@ nav a:hover {
 .noLazyLoad {
   opacity: 1;
 }
-/* SPLASH INTRO SECTION STARTS */
-.splashIntro {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #181818f6;
-  backdrop-filter: blur(8px);
-  z-index: 999;
-  text-align: center;
-}
-.splashIntro.display-none {
-  position: fixed;
-  opacity: 0;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #181818;
-  z-index: -10;
-  text-align: center;
-  transition: all 1s;
-}
-.splashIntro.noRun {
-  display: none;
-}
-img#splashResize {
-  max-width: 18vw;
-  position: absolute;
-  left: 42%;
-  top: 45%;
-}
-@keyframes fadeIn{
-  to{
-    opacity: 1;
-  }
-}
-.splashFade {
-  opacity: 0;
-  animation: fadeIn 0.5s ease-in forwards;
-}
-/* SPLASH INTRO SECTION ENDS */
 #text {
   margin-top: 32px;
   margin-right: 10px;
@@ -292,13 +249,17 @@ p#infobadge {
   cursor: default;
 }
 /* SEARCH ENGINE STYLING STARTS */
-.vaultmain-searchengine {
-  margin: auto;
+.hero {
+  width: 100%;
+  text-align: center;
 }
-.vaultmain-searchengine input {
-  margin-top: 20px;
-  margin-bottom: 10px;
-  display: block;
+.filters {width: 80% ;display: block; margin: 20px auto 10px auto}
+.filters .searchbar {display: inline;}
+.filters .filterBy {
+  position: relative;
+  display: inline-block;
+}
+.filters #vaultmain-searchengine-js-bridge{
   font-family: 'Inter', sans-serif;
   background-image: url('local/search-engine.png');
   background-position: 10px 6px;
@@ -315,8 +276,106 @@ p#infobadge {
   border: none;
   outline: #222 solid 1px;
 }
-.vaultmain-searchengine input:focus{
+.filters #vaultmain-searchengine-js-bridge:focus {
   outline: #222 solid 1px;
+}
+.filters button {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  color: #b1b1b1;
+  background-color: rgba(24, 26, 27, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: none;
+  outline: #222 solid 1px;
+  border-radius: 10px;
+  padding: 10px 20px 10px 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.filterDropdown {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 0px;
+  min-width: 400px;
+  z-index: 1;
+  background-color: rgba(24, 26, 27, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 10px 20px 10px 20px;
+}
+.show {
+  display: inline-block;
+}
+#checkboxes {
+  display: inline;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  color: #b1b1b1;
+  background-color: rgba(24, 26, 27, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: none;
+  outline: #222 solid 1px;
+  border-radius: 10px;
+  padding: 10px 20px 10px 20px;
+}
+#checkboxes input {
+  display: inline;
+}
+.filterDropdown * {
+  box-sizing: border-box;
+}
+.filterDropdown .cbx {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  color: #b1b1b1;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  padding: 6px 8px;
+  border-radius: 6px;
+  overflow: hidden;
+  transition: all 0.2s ease;
+  display: inline-block;
+}
+.filterDropdown .cbx:not(:last-child) {
+  margin-right: 6px;
+}
+.filterDropdown .cbx:hover {
+  background: rgba(255, 0, 102, 0.06);
+}
+.filterDropdown .cbx span {
+  float: left;
+  vertical-align: middle;
+  transform: translate3d(0, 0, 0);
+}
+.filterDropdown .cbx span:first-child {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  transform: scale(1);
+  border: 1px solid #dbccd8;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 1px rgba(75, 0, 54, 0.05);
+}
+.filterDropdown .cbx span:last-child {
+  padding-left: 8px;
+  line-height: 18px;
+}
+.filterDropdown .cbx:hover span:first-child {
+  border-color: var(--accent_light);
+}
+.filterDropdown .inp-cbx {
+  position: absolute;
+  visibility: hidden;
+}
+.filterDropdown .inp-cbx:checked + .cbx span:first-child {
+  background: var(--accent_light);
+  border-color: var(--accent_light);
 }
 #vaultmain-searchengine-alert {
   margin: auto;
@@ -331,6 +390,24 @@ p#infobadge {
   color:#b1b1b1;
   font-size: 3em;
   cursor: default;
+}
+.skeleton {
+  background-color: rgba(0, 0, 0, 0.25);
+  animation: pulse 0.9s linear infinite alternate;
+  width: 100%;
+  height: 0;
+  border-radius: 12px;
+  padding-bottom: 150%;
+  z-index: 9999;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: rgba(0, 0, 0, 0.25);
+  }
+  100% {
+    background-color: rgb(13, 13, 13);
+  }
 }
 /* ABOUT PAGE STARTS */
 #post-area {
@@ -471,6 +548,7 @@ mark.bd-fix {
 .col {
   position: relative;
   flex: 1 0 14%;
+  max-width: calc(100% / 6 - 2%);
   margin: 1%;
   display: flex;
   justify-content: center;
@@ -704,10 +782,8 @@ body#map-labs {
 @media only screen and (max-width: 900px) {
   .col {
     flex: 1 0 18%;
+    max-width: calc(100% / 5 - 2%);
     height: auto;
-  }
-  .splashIntro {
-    display: none;
   }
   .right img {max-height: 5vw;}
 }
@@ -715,6 +791,7 @@ body#map-labs {
   .row {margin: 14px;}
   .col {
     flex: 1 0 20%;
+    max-width: calc(100% / 4 - 2%);
     height: auto;
   }
   .left h1 {font-size: 18px;}
@@ -726,10 +803,10 @@ body#map-labs {
   .collectionContainer p {display: block; margin: 10px auto 10px auto; text-align: center;}
 }
 @media only screen and (max-width: 715px) {
-  .col {flex: 1 0 25%;height: auto;}
+  .col {flex: 1 0 25%;max-width: calc(100% / 3 - 2%);height: auto;}
   .collection-col {flex: 1 0 90%; margin: 20px;}
-  .vaultmain-searchengine input {width: 70%;}
-  .vaultmain-searchengine input:focus {width: 70%;}
+  .filters input {width: 70%;}
+  .filters input:focus {width: 70%;}
   .footer {
     display: grid; 
     grid-template-columns: 1fr; 
@@ -766,7 +843,7 @@ body#map-labs {
   .content p i{display: none;}
 }
 @media only screen and (max-width: 620px) {
-  .col {flex: 1 0 40%;height: auto;justify-content: center;}
+  .col {flex: 1 0 40%;max-width: calc(100% / 2 - 2%);height: auto;justify-content: center;}
   .responsiveNav {display: none;}
   .l1 {position: absolute;top: 50px;background: rgba(24, 26, 27, 0.8);backdrop-filter: blur(10px);-webkit-backdrop-filter: blur(10px);}
   .l2 {position: absolute;top: 100px;background: rgba(24, 26, 27, 0.8);backdrop-filter: blur(10px);-webkit-backdrop-filter: blur(10px);}
@@ -784,9 +861,9 @@ body#map-labs {
   .left p {font-size: 10px;}
 }
 @media only screen and (max-width: 400px) {
-  .vaultmain-searchengine input {font-size: 12px;}
+  .filters input {font-size: 12px;}
   .row {margin: 15px;}
-  .col {flex: 1 0 80%;margin: 5px;height: auto;width: 100%;}
+  .col {flex: 1 0 80%; max-width: 98%; margin: 5px;height: auto;width: 100%;}
   .navhead a {display: none;}
   .content h2 b{display: none;}
 }

@@ -1,1 +1,40 @@
-const targets=document.querySelectorAll("#load"),lazyLoad=e=>{new IntersectionObserver((e,t)=>{console.log(e),e.forEach(e=>{if(console.log("lazyLoaded"),e.isIntersecting){const o=e.target,s=o.getAttribute("data-lazy");o.setAttribute("src",s),o.classList.add("fade"),t.disconnect()}})}).observe(e)};targets.forEach(lazyLoad);
+const targets = Array.from(document.querySelectorAll("a"));
+const delayIncrement = 10;
+const columns = 6;
+
+const lazyLoad = (target, index) => {
+  const img = target.querySelector("img#load");
+  const skeleton = target.querySelector(".skeleton");
+
+  if (!img || !skeleton) {
+    console.log('Missing img or skeleton', target);
+    return;
+  }
+
+  const rowIndex = Math.floor(index / columns);
+  const columnIndex = index % columns;
+  const delay = (rowIndex + columnIndex) * delayIncrement;
+
+  const io = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      console.log('Intersection Observer triggered', entry);
+      if (entry.isIntersecting) {
+        setTimeout(() => {
+          const src = img.getAttribute("data-lazy");
+          console.log('Loading image', src);
+
+          img.setAttribute("src", src);
+          img.classList.add('fade');
+
+          skeleton.style.display = 'none';
+
+          observer.disconnect();
+        }, delay);
+      }
+    });
+  });
+
+  io.observe(target);
+};
+
+targets.forEach(lazyLoad);

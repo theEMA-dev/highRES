@@ -27,31 +27,41 @@ function searchFunction() {
   }
 }
 function checkboxFilter() {
+  //#
+  //#   Vault - Main - Filter Engine v2
+  //#
   var ul, li, i, txtValue, radios, checkedValue;
   ul = document.getElementById("gridRow");
   li = ul.getElementsByClassName('col');
   radios = document.getElementsByName('filter');
   checkedValue = Array.from(radios).find(radio => radio.checked)?.value;
 
+  if (checkedValue === '0') {
+    for (i = 0; i < li.length; i++) {
+      li[i].style.display = "";
+    }
+    return;
+  }
+
   for (i = 0; i < li.length; i++) {
     var detailsElement = li[i].getElementsByClassName("details")[0];
     if (!detailsElement) {
-      li[i].style.display = "none"; // Hide divs without a details element
+      li[i].style.display = "none";
       continue;
     }
 
     var pElements = detailsElement.getElementsByTagName("p");
-    txtValue = pElements[pElements.length - 1].innerText; // Select the last p element
+    txtValue = pElements[pElements.length - 1].innerText;
     if (txtValue && txtValue.includes(' - ')) {
-      var resolution = txtValue.split(' - ')[1]; // Extract resolution
+      var resolution = txtValue.split(' - ')[1]; 
       if (!resolution.includes('x')) {
-        li[i].style.display = "none"; // Hide divs without resolution in correct format
+        li[i].style.display = "none"; 
         continue;
       }
 
       var resolutionParts = resolution.split('x');
       if (!Number.isInteger(parseInt(resolutionParts[0])) || !Number.isInteger(parseInt(resolutionParts[1]))) {
-        li[i].style.display = "none"; // Hide divs with non-numeric resolution
+        li[i].style.display = "none"; 
         continue;
       }
 
@@ -75,7 +85,7 @@ function checkboxFilter() {
         li[i].style.display = "";
       }
     } else {
-      li[i].style.display = "none"; // Hide divs without resolution information
+      li[i].style.display = "none";
     }
   }
 }

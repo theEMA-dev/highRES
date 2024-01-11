@@ -76,23 +76,29 @@
           <input type="text" id="vaultmain-searchengine-js-bridge" onkeyup="searchFunction()" placeholder="Search by game name or release year">
         </div>
         <div class="filterBy">
-          <button onclick="filterOpen()">Filter</button>
+          <button onclick="filterOpen()">Filter ‎ <mark class="preview">‎ PREVIEW ‎</mark></button>
           <div id="dropdown" class="filterDropdown">
+            <p class="left">Quality:</p>
+            <input class="inp-cbx" id="zero" name="filter" value="0" onclick="checkboxFilter()" type="radio" checked="checked"/>
+            <label class="cbx" for="zero"><span>
+            <svg width="12px" height="10px">
+              <use xlink:href="#check-4"></use>
+            </svg></span><span>All</span></label>
             <input class="inp-cbx" id="hd" name="filter" value="HD" onclick="checkboxFilter()" type="radio"/>
             <label class="cbx" for="hd"><span>
             <svg width="12px" height="10px">
               <use xlink:href="#check-4"></use>
-            </svg></span><span>HD</span></label>
+            </svg></span><span>1.5x</span></label>
             <input class="inp-cbx" id="2k" name="filter" value="2K" onclick="checkboxFilter()" type="radio"/>
             <label class="cbx" for="2k"><span>
             <svg width="12px" height="10px">
               <use xlink:href="#check-4"></use>
-            </svg></span><span>2K</span></label>
+            </svg></span><span>2x</span></label>
             <input class="inp-cbx" id="4k" name="filter" value="4K" onclick="checkboxFilter()" type="radio"/>
             <label class="cbx" for="4k"><span>
             <svg width="12px" height="10px">
               <use xlink:href="#check-4"></use>
-            </svg></span><span>4K</span></label>
+            </svg></span><span>Ultra</span></label>
           </div>
         </div>
       </div>
@@ -137,6 +143,7 @@
       <div class="col"><a href="cdn/grid/3.png"><div class="skeleton"></div><img class="zoomVER" id="load" data-lazy="cdn/thumb/3.jpg" alt="Parkasaurus (2018 by theEMA)"></a><div class="gridInfo"><div class="details"><h3>Parkasaurus (2018)</h3><p>by theEMA - 1200x1800</p></div><div class="badges"><a href="cdn/grid/3.png" download><img src="./local/download-symbol.svg" alt="Download"></a></div></div></div>
       <div class="col"><a href="cdn/grid/2.png"><div class="skeleton"></div><img class="zoomVER" id="load" data-lazy="cdn/thumb/2.jpg" alt="Factorio (2016) by theEMA"></a><div class="gridInfo"><div class="details"><h3>Factorio (2016)</h3><p>by theEMA - 1200x1800</p></div><div class="badges"><a href="cdn/grid/2.png" download><img src="./local/download-symbol.svg" alt="Download"></a></div></div></div>
       <div class="col"><a href="cdn/grid/1.png"><div class="skeleton"></div><img class="zoomVER" id="load" data-lazy="cdn/thumb/1.jpg" alt="Aion Collector's Edition (2009) by theEMA"></a><div class="gridInfo"><div class="details"><h3>Aion Collector's Edition (2009)</h3><p>by theEMA - 1200x1800</p></div><div class="badges"><a href="cdn/grid/1.png" download><img src="./local/download-symbol.svg" alt="Download"></a></div></div></div>
+      <div class="col"></div>
     </div>
     <div id="vaultmain-searchengine-alert" style="display: none;"><p id="vaultmain-searchengine-alert-noresult">No results found</p></div>
     <div class="footer">

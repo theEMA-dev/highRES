@@ -3,6 +3,12 @@
   --accent_light: #c80039;
 }
 /* NAVIGATION STYLING START */
+p {
+  font-family: 'Inter', sans-serif;
+  color: #b1b1b1;
+  font-weight: 500;
+
+}
 nav {
   background: rgba(24, 26, 27, 0.8);
   backdrop-filter: blur(10px);
@@ -398,7 +404,6 @@ p#infobadge {
   height: 0;
   border-radius: 12px;
   padding-bottom: 150%;
-  z-index: 9999;
 }
 
 @keyframes pulse {
@@ -452,6 +457,15 @@ mark {
   color: #141414;
   font-weight: 500;
   vertical-align: 1px;
+}
+mark.preview {
+  background-color: #03CEA4;
+  transition: ease-in-out all 150ms;
+}
+mark.preview:hover {
+  -webkit-box-shadow: 0 24px 10px -3px rgba(3, 206, 165, 0.8);
+  -moz-box-shadow: 0 24px 10px -3px rgba(3, 206, 165, 0.8);
+  box-shadow: 0 0 24px -3px rgba(3, 206, 165, 0.8);
 }
 mark.bd-add {
   background: #2ECC40;
@@ -559,7 +573,8 @@ mark.bd-fix {
 }
 .zoomVER ,.widget{border-radius: 12px;}
 .horizontalFrame {
-  height: auto;
+  width: 100%;
+  /* Set a specific height based on the aspect ratio of your images */
   border-radius: 12px;
   background-color: rgba(0, 0, 0, 0.25);
   transition: all 250ms;
@@ -574,6 +589,7 @@ img {
 .col img {
   height: auto;
 }
+.col a {height: calc(auto - 4px);}
 .fade {
   opacity: 1;
   transition: all 750ms;

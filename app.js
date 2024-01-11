@@ -1,25 +1,35 @@
-const targets = document.querySelectorAll("a");
+const targets = Array.from(document.querySelectorAll("a"));
+const delayIncrement = 10;
+const columns = 6;
 
-const lazyLoad = target => {
+const lazyLoad = (target, index) => {
   const img = target.querySelector("img#load");
   const skeleton = target.querySelector(".skeleton");
 
-  // Check if the img and skeleton exist before proceeding
   if (!img || !skeleton) {
+    console.log('Missing img or skeleton', target);
     return;
   }
 
+  const rowIndex = Math.floor(index / columns);
+  const columnIndex = index % columns;
+  const delay = (rowIndex + columnIndex) * delayIncrement;
+
   const io = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
+      console.log('Intersection Observer triggered', entry);
       if (entry.isIntersecting) {
-        const src = img.getAttribute("data-src");
+        setTimeout(() => {
+          const src = img.getAttribute("data-lazy");
+          console.log('Loading image', src);
 
-        img.setAttribute("src", src);
-        img.style.display = 'block'; // Show the image
+          img.setAttribute("src", src);
+          img.classList.add('fade');
 
-        skeleton.style.display = 'none'; // Hide the skeleton
+          skeleton.style.display = 'none';
 
-        observer.disconnect();
+          observer.disconnect();
+        }, delay);
       }
     });
   });

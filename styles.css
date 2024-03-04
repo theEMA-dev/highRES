@@ -259,7 +259,7 @@ p#infobadge {
   width: 100%;
   text-align: center;
 }
-.filters {width: 80% ;display: block; margin: 20px auto 10px auto}
+.filters {display: block; margin: 20px auto 10px auto}
 .filters .searchbar {display: inline;}
 .filters .filterBy {
   position: relative;
@@ -273,7 +273,7 @@ p#infobadge {
   background-repeat: no-repeat;
   border-radius: 10px;
   font-size: 15px;
-  width: 40%;
+  width: 40em;
   padding: 10px 20px 10px 40px;
   color: #b1b1b1;
   background-color: rgba(24, 26, 27, 0.8);
@@ -289,6 +289,7 @@ p#infobadge {
   font-family: 'Inter', sans-serif;
   font-size: 15px;
   color: #b1b1b1;
+  width: 10em;
   background-color: rgba(24, 26, 27, 0.8);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -300,20 +301,32 @@ p#infobadge {
   cursor: pointer;
 }
 .filterDropdown {
-  display: none;
+  display: flex;
+  justify-content: space-around;
+  visibility: hidden;
+  opacity: 0;
   position: absolute;
   top: 50px;
-  right: 0px;
-  min-width: 400px;
+  right: 0;
+  width: 49em;
+  overflow: hidden;
   z-index: 1;
   background-color: rgba(24, 26, 27, 0.8);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(10px);
   border-radius: 10px;
   padding: 10px 20px 10px 20px;
+  transition: visibility 0s 3s, opacity 0.2s ease-in-out;
 }
-.show {
-  display: inline-block;
+
+.filterDropdown.active {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s, opacity 0.2s ease-in-out;
+}
+.filterDropdown .seperator {
+  width: 0.5px;
+  background-color: #b1b1b1;
 }
 #checkboxes {
   display: inline;
@@ -696,7 +709,7 @@ img {
   text-align: left;
   cursor: pointer;
 }
-.active {
+.collapsible.active {
   background-image: url('local/collapsible-open.svg');
 }
 .content {
@@ -753,21 +766,6 @@ img {
   transition: all 300ms;
 }
 .collectionContainer img {margin-left: 1.5rem;}
-#lego .collectionContainer {
-  -webkit-box-shadow: inset 0px -180px 60px -190px rgba(240, 221, 50, 0.7);
-  -moz-box-shadow: inset 0px -180px 60px -190px rgba(240, 221, 50, 0.7);
-  box-shadow: inset 0px -180px 60px -200px rgba(240, 221, 50, 0.7);
-}
-#map-labs .collectionContainer {
-  -webkit-box-shadow: inset 0px -180px 60px -190px rgba(95, 214, 48, 0.7);;
-  -moz-box-shadow: inset 0px -180px 60px -190px rgba(95, 214, 48, 0.7);;
-  box-shadow: inset 0px -180px 60px -200px rgba(95, 214, 48, 0.7);
-}
-#software .collectionContainer {
-  -webkit-box-shadow: inset 0px -180px 60px -190px rgba(161, 47, 255, 0.7);
-  -moz-box-shadow: inset 0px -180px 60px -190px rgba(161, 47, 255, 0.7);
-  box-shadow: inset 0px -180px 60px -200px rgba(161, 47, 255, 0.7);
-}
 #lego .collectionContainer #collectionInfo p , #lego .collectionContainer a:hover{color: #f0de32; border-color: #f0de32;}
 #map-labs .collectionContainer #collectionInfo p , #map-labs .collectionContainer a:hover {color: #5fd630; border-color: #5fd630;}
 #software .collectionContainer #collectionInfo p , #software .collectionContainer a:hover {color: #a12fff; border-color: #a12fff;}
@@ -802,6 +800,9 @@ body#map-labs {
     height: auto;
   }
   .right img {max-height: 5vw;}
+  .filters #vaultmain-searchengine-js-bridge {width: 20em;}
+  .filterDropdown {width: 30.2em; flex-direction: column;}
+  .filterDropdown .seperator {width: auto; height: 0.5px; margin: 10px 0 10px 0;}
 }
 @media only screen and (max-width: 800px) {
   .row {margin: 14px;}
@@ -872,9 +873,17 @@ body#map-labs {
   .branding img {margin-left: 0px; padding-left: 1rem;}
   .collectionContainer img {width: 85% !important;}
 }
+@media only screen and (max-width: 560px) {
+  .filterBy mark {display: none;}
+  .filters button {width: 6em;}
+  .filterDropdown {width: 26.4em;}
+}
 @media only screen and (max-width: 490px) {
   .row {margin: 17px;}
   .left p {font-size: 10px;}
+  .filters button {width: 10em; margin-top: 20px;}
+  .filterDropdown {right: -6.3em; top: 78px; width: 20em;}
+  body#no-pattern {background-image: none;}
 }
 @media only screen and (max-width: 400px) {
   .filters input {font-size: 12px;}

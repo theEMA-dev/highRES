@@ -89,6 +89,41 @@ function checkboxFilter() {
     }
   }
 }
+function filterByAuthor() {
+  var ul, li, i, txtValue, radios, checkedValue;
+  ul = document.getElementById("gridRow");
+  li = ul.getElementsByClassName('col');
+  radios = document.getElementsByName('filter');
+  checkedValue = Array.from(radios).find(radio => radio.checked)?.value;
+
+  if (checkedValue === '0') {
+    for (i = 0; i < li.length; i++) {
+      li[i].style.display = "";
+    }
+    return;
+  }
+
+  for (i = 0; i < li.length; i++) {
+    var detailsElement = li[i].getElementsByClassName("details")[0];
+    if (!detailsElement) {
+      li[i].style.display = "none";
+      continue;
+    }
+    var pElements = detailsElement.getElementsByTagName("p");
+    if (pElements.length === 1) {
+      txtValue = pElements[0].innerText; // Get the only p element
+      txtValue = txtValue.split(' - ')[0];
+      txtValue = txtValue.split('by ')[1];
+    } else if (pElements.length > 1) {
+      txtValue = pElements[1].innerText; // Get the second p element
+    }
+    if (txtValue == checkedValue) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
 function filterOpen() {
-  document.getElementById("dropdown").classList.toggle("show");
+  document.getElementById("filter-dropdown").classList.toggle("active");
 }

@@ -255,16 +255,16 @@ nav a:hover {
 .dropbtn:hover {color: var(--nav_menuitem);}
 .nav-icon {
   display: inline-block;
-  width: 25px;
-  height: 25px;
+  width: 27px;
+  height: 27px;
   background-size: cover;
-  margin-top: 12px;
+  margin-top: 11.5px;
 }
 .nav-menu {
   background-image: url(local/nav-icon.svg);
+  filter: invert(17%) sepia(82%) saturate(5371%) hue-rotate(336deg) brightness(97%) contrast(112%);
 }
 .nav-menu:focus, .nav-menu:hover {
-  filter: brightness(0%) contrast(30%);
   transition: ease-in all 150ms;
 }
 .dropdown-content {
@@ -417,6 +417,7 @@ body {background-color: var(--body); margin: 0; background-blend-mode: color-dod
   -webkit-backdrop-filter: var(--blur);
   border: none;
   outline: var(--text_secondary) solid 1px;
+  overflow: hidden;
 }
 .filters #vaultmain-searchengine-js-bridge:focus {
   outline: var(--text_primary) solid 1px;
@@ -1037,6 +1038,8 @@ html.color-theme-in-transition *:after {
   .filters button {width: 10em; margin-top: 20px;}
   .filterDropdown {right: -6.3em; top: 78px; width: 20em;}
   body#no-pattern {background-image: none;}
+  .themes {width: calc(100% - 260px);}
+  .themes button {position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);}
 }
 @media only screen and (max-width: 400px) {
   .filters input {font-size: 12px;}

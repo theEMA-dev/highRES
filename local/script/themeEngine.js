@@ -50,7 +50,7 @@ function themeSwitch(themeToSwitch) {
     head.innerHTML += '<meta name="theme-color" content="#2d2c29">';
   } else if (themeToSwitch === 'light') {
     logo.style.filter = 'invert(9%) sepia(92%) saturate(6219%) hue-rotate(330deg) brightness(75%) contrast(100%)';
-    footer[0].style.backgroundImage = 'url(/local/footer-background.svg)';
+    footer[0].style.backgroundImage = 'url(/highRES/local/footer-background.svg)';
     icon.style.filter = 'invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%)';
     body.style.backgroundBlendMode = 'color-dodge';
     head.innerHTML += '<meta name="theme-color" content="#f3f4f6">';
@@ -62,7 +62,7 @@ function themeSwitch(themeToSwitch) {
     head.innerHTML += '<meta name="theme-color" content="#000000">';
   } else {
     logo.style.filter = 'invert(17%) sepia(82%) saturate(5371%) hue-rotate(336deg) brightness(97%) contrast(112%)';
-    footer[0].style.backgroundImage = 'url(/local/footer-background.svg)';
+    footer[0].style.backgroundImage = 'url(/highRES/local/footer-background.svg)';
     icon.style.filter = 'invert(55%) sepia(0%) saturate(81%) hue-rotate(199deg) brightness(91%) contrast(85%)';
     body.style.backgroundBlendMode = 'normal';
     head.innerHTML += '<meta name="theme-color" content="#181818">';

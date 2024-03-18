@@ -1,39 +1,29 @@
-/* VERSION TEMPLATE 🥳
- Version 2.0.3-2101a
-         2 = major version
-         0 = minor version 
-         3 = patch (number of changes in changelog)
-         ------------------------------------------
-         -2101a
-          21 = year
-          01 = month
-          a,b,f = alpha,beta,final
-*/
-var alertTitle = document.querySelectorAll(".alert");
-  alertTitle[0].title = 'placeholder' ;
-  alertTitle[0].style.display = 'none' ;
-  alertTitle[0].innerHTML = '<p>placeholder</p>' ;
+//#
+//# Vault - Main - Variables v1
+//#
+var version, gridCount, materialCount;
+version = '1.8.1';
+gridCount = '112';
+materialCount = '0';
 
-  document.getElementById("websiteVersion").innerHTML = 'Version 1.7.5' ;
-  document.getElementById("gridCount").innerHTML = '110' ;
-  document.getElementById("gridCount").title = 'Uncategorized: 34\nMap Labs Collection: 57\nLEGO Collection: 8\nSoftware Collection: 10' ;
-  document.getElementById("materialCount").innerHTML = '0' ;
-  
-var badgeAddSelect = document.querySelectorAll(".bd-add");
-  for (var i = 0; i <= badgeAddSelect.length - 1; i++) {
-    badgeAddSelect[i].textContent = 'NEW';
-  }
-var badgeRemoveSelect = document.querySelectorAll(".bd-remove");
-  for (var i = 0; i <= badgeRemoveSelect.length - 1; i++) {
-    badgeRemoveSelect[i].textContent = 'REMOVE';
-  }
-var badgeFixSelect = document.querySelectorAll(".bd-fix");
-  for (var i = 0; i <= badgeFixSelect.length - 1; i++) {
-    badgeFixSelect[i].textContent = 'FIX';
-  }
-var badgeChangeSelect = document.querySelectorAll(".bd-change");
-  for (var i = 0; i <= badgeChangeSelect.length - 1; i++) {
-    badgeChangeSelect[i].textContent = 'CHANGE';
-  }
+document.getElementById("websiteVersion").innerHTML = version;
+document.getElementById("gridCount").innerHTML = gridCount;
+document.getElementById("gridCount").title = 'Uncategorized: 34\nMap Labs Collection: 57\nLEGO Collection: 8\nSoftware Collection: 10' ;
+document.getElementById("materialCount").innerHTML = materialCount;
+
 a = document.getElementById("websiteVersion");
 a.setAttribute("href", "https://theema-dev.github.io/highRES/help");
+
+let c1 = "color:#fc1b5b; font-weight:bold; font-size:16px;"
+let c2 = "color:#ff4177; font-weight:bold; font-size:15px;"
+let c3 = "color:#ff719a; font-weight:bold; font-size:14px;"
+let c4 = "color:#febacd; font-weight:bold; font-size:13px;"
+let c5 = "color:#ffecf1; font-weight:bold; font-size:12px;"
+
+console.log("‌");
+console.log("%c 🆅🅻🆃 𝐕𝐀𝐔𝐋𝐓 " + version + " ", c1);
+console.log("‌%c 🆅🆂🅴 Search Engine v3", c2);
+console.log("‌%c 🆅🆂🅴 Filters v2", c3);
+console.log("‌%c 🆅🆃🅴 Themes v1 ", c4);
+console.log("‌%c 🆂🆃🆂 Grids: " + gridCount + " Assets: " + materialCount, c5);
+console.log("‌");

@@ -1,7 +1,7 @@
+//#
+//#   Vault - Main - Search Engine (vSE) v3
+//#
 function searchFunction() {
-  //#
-  //#   Vault - Main - Search Engine v1
-  //#
   var input,filter,ul,li,i,l,txtValue,result,noResult;
   noResult = document.getElementById('vaultmain-searchengine-alert');
   input = document.getElementById('vaultmain-searchengine-js-bridge');
@@ -11,7 +11,12 @@ function searchFunction() {
   result = ul.getElementsByClassName('se-shown');
   txtValue = 0;
   for (i = 0; i < li.length; i++) {
-    txtValue = li[i].getElementsByTagName("img")[0].alt;
+    var imgElement = li[i].getElementsByTagName("img")[0];
+    if (imgElement) {
+      txtValue = imgElement.alt;
+    } else {
+      continue;
+    }
     if (txtValue.toUpperCase().indexOf(filter) > -1) {
       li[i].style.display = "";
       li[i].classList.add('se-shown');
@@ -21,15 +26,16 @@ function searchFunction() {
       li[i].classList.remove('se-shown');
     }
     if (result.length < 1) {
-      console.log('no result')
+      console.log('🆅🆂🅴 No results for this search')
       noResult.style.display = "";
     }
   }
 }
+
+//#
+//#   Vault - Main - Filter Engine v2
+//#
 function checkboxFilter() {
-  //#
-  //#   Vault - Main - Filter Engine v2
-  //#
   var ul, li, i, txtValue, radios, checkedValue;
   ul = document.getElementById("gridRow");
   li = ul.getElementsByClassName('col');
@@ -66,8 +72,6 @@ function checkboxFilter() {
       }
 
       var resolutionCategory;
-
-      // Categorize resolution
       var height = parseInt(resolutionParts[1]);
       if (height <= 1500) {
         resolutionCategory = 'HD';
@@ -77,12 +81,11 @@ function checkboxFilter() {
         resolutionCategory = '4K';
       }
 
-      console.log('Resolution:', resolution, 'Category:', resolutionCategory); // Debugging line
-
       if (checkedValue && resolutionCategory !== checkedValue) {
         li[i].style.display = "none";
       } else {
         li[i].style.display = "";
+        console.log('🆅🆂🅴 Resolution category: ' + resolutionCategory);
       }
     } else {
       li[i].style.display = "none";
@@ -111,14 +114,15 @@ function filterByAuthor() {
     }
     var pElements = detailsElement.getElementsByTagName("p");
     if (pElements.length === 1) {
-      txtValue = pElements[0].innerText; // Get the only p element
+      txtValue = pElements[0].innerText;
       txtValue = txtValue.split(' - ')[0];
       txtValue = txtValue.split('by ')[1];
     } else if (pElements.length > 1) {
-      txtValue = pElements[1].innerText; // Get the second p element
+      txtValue = pElements[1].innerText;
     }
     if (txtValue == checkedValue) {
       li[i].style.display = "";
+      console.log('🆅🆂🅴 Author category: ' + txtValue);
     } else {
       li[i].style.display = "none";
     }

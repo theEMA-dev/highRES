@@ -7,7 +7,6 @@ const lazyLoad = (target, index) => {
   const skeleton = target.querySelector(".skeleton");
 
   if (!img || !skeleton) {
-    console.log('Missing img or skeleton', target);
     return;
   }
 
@@ -17,11 +16,9 @@ const lazyLoad = (target, index) => {
 
   const io = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
-      console.log('Intersection Observer triggered', entry);
       if (entry.isIntersecting) {
         setTimeout(() => {
           const src = img.getAttribute("data-lazy");
-          console.log('Loading image', src);
 
           img.setAttribute("src", src);
           img.classList.add('fade');

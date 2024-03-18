@@ -71,14 +71,8 @@ function themeSwitch(themeToSwitch) {
     document.documentElement.classList.remove('color-theme-in-transition')
   }, 1250)
   document.getElementById('current-theme').textContent = themeName;
-  icon.src = '/local/theme/'+themeToSwitch+'.svg';
+  icon.src = '/highRES/local/theme/'+themeToSwitch+'.svg';
   localStorage.setItem('theme', themeToSwitch);
   document.getElementById('theme-dropdown').classList.remove('show');
   console.log('🆅🆃🅴 Theme has been set to '+themeToSwitch);
-}
-var modal = document.getElementById('theme-dropdown');
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.classList.remove('show');
-  }
 }
